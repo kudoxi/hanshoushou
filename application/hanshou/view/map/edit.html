@@ -1,0 +1,97 @@
+{include file="/public/head"}
+<link href="__PUBLIC__/assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="__PUBLIC__/assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+</head>
+
+<body style="padding: 10px;">
+	<form role="form" method="post" action="{:url('hanshou/map/edit')}">
+		<div class="form-group">
+			<label for="name">地址</label>
+			<input type="text" class="form-control address" value="{$list.address}" placeholder="请输入地址" required/>
+		</div>
+		<div class="form-group">
+			<label for="name">经度</label>
+			<input type="text" class="form-control x" value="{$list.x}" placeholder="请输入经度" />
+		</div>
+		<div class="form-group">
+			<label for="name">纬度</label>
+			<input type="text" class="form-control y" value="{$list.y}" placeholder="请输入纬度" />
+		</div>
+		<div class="form-group">
+			<label for="name">车辆时间</label>
+			<div class="controls input-append date form_datetime" data-date="" data-date-format="yyyy-mm-dd HH:ii:ss" data-link-field="dtp_input1">
+                <input size="16" class="form-control rtime" type="text" value="{$list.rtime}" readonly required>
+                <span class="add-on"><i class="icon-remove"></i></span>
+				<span class="add-on"><i class="icon-th"></i></span>
+            </div>
+			<input type="hidden" id="dtp_input1" value="" />
+		</div>
+		<div class="form-group">
+			<label for="name">备注</label>
+			<textarea class="form-control remark">{$list.remark}</textarea>
+		</div>
+		<input type="hidden" id="id" value="{$list.id}" />
+		<span class="btn btn-primary tijiao">提交</span>
+	</form>
+<script type="text/javascript" src="__PUBLIC__/assets/js/jquery-1.8.3.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="__PUBLIC__/assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/assets/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+<script type="text/javascript" src="__PUBLIC__/assets/js/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>
+<script type="text/javascript" src="__PUBLIC__assets/js/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+</body>
+<script>
+	$('.form_datetime').datetimepicker({
+        language:  'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+		autoclose: 1,
+		todayHighlight: 1,
+		startView: 2,
+		forceParse: 0,
+        showMeridian: 1
+    });
+    $(".tijiao").click(function(){
+    	var id = $("#id").val();
+    	var address = $(".address").val();
+    	var x = $(".x").val();
+    	var y = $(".y").val();
+    	var rtime = $(".rtime").val();
+    	var remark = $(".remark").text();
+    	remark = $.trim(remark);
+    	address = $.trim(address);
+    	if(address == ""){
+    		layer.msg("地址不能为空", {
+			  icon: 2,
+			  time: 2000 //2秒关闭（如果不配置，默认是3秒）
+			}, function(){
+				
+			}); 
+			return;
+    	}
+    	$.ajax({
+    		type:"post",
+			url:"{:url('hanshou/map/edit')}",
+			async:false,
+			data:{id:id,address:address,x:x,y:y,rtime:rtime,remark:remark},
+			success:function(data){
+				if(data[0] == "101"){
+					layer.msg(data[1], {
+					  icon: 1,
+					  time: 2000 //2秒关闭（如果不配置，默认是3秒）
+					}, function(){
+						var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
+						parent.layer.close(index); //再执行关闭  
+					}); 
+				}else{
+					layer.msg(data[1], {
+					  icon: 2,
+					  time: 2000 //2秒关闭（如果不配置，默认是3秒）
+					}, function(){
+						
+					}); 
+				}
+			}
+    	})
+    })
+</script>
+</html>

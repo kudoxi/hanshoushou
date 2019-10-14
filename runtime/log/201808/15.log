@@ -1,0 +1,113 @@
+---------------------------------------------------------------
+[ 2018-08-15T04:52:38+08:00 ] 52.53.201.78 GET /hanshou/public/hanshou/index/index.html
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/index/index.html [运行时间：0.054443s][吞吐率：18.37req/s] [内存消耗：5,099.01kb] [文件加载：81]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000025s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001713s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'x-forwarded-for' => '52.53.201.78, 127.0.0.1, 173.254.200.70',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.hanshoushou.com/',
+  'accept-encoding' => 'gzip',
+  'kerid' => '11644',
+  'via' => '1.0 lax1.us.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'lax1.us.smartgslb.com="Surrogate/1.0"',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000898s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\hanshou\controller\Index->index[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Index.php ]
+[ info ] [ VIEW ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/public/../application/hanshou/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'need_wait',
+  4 => 'is_login',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000267s ] mysql:host=localhost;port=3306;dbname=sql_hanshoushou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_mywords` [ RunTime:0.004381s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` [ RunTime:0.000206s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '阿韩' and is_read != 1 ) LIMIT 1 [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '韩宇佳' and is_read != 1 ) LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'Ahan' and is_read != 1 ) LIMIT 1 [ RunTime:0.000101s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'katja' and is_read != 1 ) LIMIT 1 [ RunTime:0.000103s ]
+---------------------------------------------------------------
+[ 2018-08-15T17:36:12+08:00 ] 69.58.178.57 GET /hanshou/public/hanshou/index/index.html
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/index/index.html [运行时间：0.100654s][吞吐率：9.94req/s] [内存消耗：5,078.75kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000052s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003600s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'x-forwarded-for' => '69.58.178.57, 127.0.0.1, 173.254.200.70',
+  'from' => 'wc@verisignlabs.com',
+  'accept' => 'text/html,text/plain,*/*',
+  'accept-language' => 'en-us,en;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (compatible; ips-agent)',
+  'kerid' => '11644',
+  'via' => '1.0 lax1.us.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'lax1.us.smartgslb.com="Surrogate/1.0"',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000911s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\hanshou\controller\Index->index[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Index.php ]
+[ info ] [ VIEW ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/public/../application/hanshou/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'need_wait',
+  4 => 'is_login',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000243s ] mysql:host=localhost;port=3306;dbname=sql_hanshoushou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_mywords` [ RunTime:0.002777s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '阿韩' and is_read != 1 ) LIMIT 1 [ RunTime:0.000176s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '韩宇佳' and is_read != 1 ) LIMIT 1 [ RunTime:0.000142s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'Ahan' and is_read != 1 ) LIMIT 1 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'katja' and is_read != 1 ) LIMIT 1 [ RunTime:0.000129s ]

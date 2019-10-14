@@ -1,0 +1,4 @@
+CREATE TABLE `sql_hanshoushou`.`hs_language` ( `id` INT(11) NOT NULL COMMENT 'id' , `name` VARCHAR(64) NOT NULL COMMENT '语言' , `c_time` INT(11) NOT NULL COMMENT '创建时间' , `ip` VARCHAR(64) NOT NULL COMMENT 'ip地址' ) ENGINE = MyISAM COMMENT = '语言类别表';
+ALTER TABLE `hs_language` ADD PRIMARY KEY(`id`);
+ALTER TABLE `hs_language` CHANGE `id` `id` INT(11) NOT NULL AUTO_INCREMENT COMMENT 'id';
+

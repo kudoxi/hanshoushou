@@ -1,0 +1,36 @@
+<script>
+	$(".check_out").click(function(){
+		var to_href = $(this).attr("attr-href");
+		window.location.href = to_href;
+	})
+	
+	function zan_or_cai(my,tip,zc,option,ud,id,lang){
+		$.ajax({
+			type:"post",
+			url:"{:url('hanshou/base/zan_or_cai')}",
+			async:false,
+			data:{type : lang,"is_zan":ud,id:id,option:option},
+			success:function(data){
+				layer.tips(tip,my,{tips:1});
+				my.siblings(".z_or_c").val(zc);
+				if(option == "+"){
+					my.addClass("zan_active");
+				}else{
+					my.removeClass("zan_active");
+				}
+				my.parents(".zan_div").children(".info-box").removeClass("bg-aqua").removeClass("bg-red").addClass(data['ok']);
+				my.parents(".zan_div").find(".progress-bar").css("width",data["percent"]);
+				my.parents(".zan_div").find(".info-box-number").text(data['zan']);
+			}
+		})
+	}
+	//点赞区域自适应
+	$(window).resize(function(){
+		if($(window).width() < 1000){
+			$(".zan_div").css({"position":"relative","margin-top":"0px"});
+		}else{
+			$(".zan_div").css({"position":"absolute","margin-top":"-112px"});
+		}
+		console.log();
+	})
+</script>

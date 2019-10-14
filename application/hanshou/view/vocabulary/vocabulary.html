@@ -1,0 +1,113 @@
+{include file="/public/head"}
+<title>单词</title>
+<style>
+	.zan_div{
+		position: absolute;
+	    width: 295px;
+	    margin-top: -112px;
+	    right: 0;
+	    margin-right: 20px;
+	}
+	.dianzan:hover,.caicai:hover{
+		background-color: #00193A;
+		cursor: pointer;
+	}
+	.zan_active{
+		background-color: #00193A;
+	}
+</style>
+</head>
+
+<body class="skin-blue layout-boxed sidebar-mini" style="padding-top: 0px;">
+	<div class="wrapper" style="overflow: hidden; height: auto; min-height: 100%;">
+		{include file="/public/header"} {include file="/public/sidebar"}
+		<div class="content-wrapper" style="min-height: 1020px;">
+			<div class="box">
+				<div class="box-header with-border" style="padding-left: 50px;">
+					<h3 class="box-title">{$language}单词部分</h3>
+				</div>
+				<div class="box-body content" style="padding: 20px 50px;">
+					<div class="container" style="width: 100%">
+						<div class="row">
+							{if $list->isEmpty()}
+							<div class="callout callout-info">
+						        <h4>额....</h4>
+						        <p>暂时没有数据，要不你自己<a href="{:url('hanshou/base/upload')}">上传</a>一下？</p>
+						    </div>
+							{/if}
+							<ul class="list-group">
+								{volist name="list" id="vo" }
+								<li class="list-group-item">
+									<p>{$vo.name}</p>
+									{if $vo['is_file'] == 0}
+									<div>
+										<audio src="{$vo.url}" controls="controls"></audio>
+									</div>
+									{/if}
+									{if $vo['is_file'] == 1}
+									<div>
+										<a href="{$vo.url}" download="{$vo.name}" target="_blank">下载</a>
+									</div>
+									{/if}
+									<div style="width: 500px;">
+										<?php echo htmlspecialchars_decode($vo['remark'])?>
+									</div>
+									<p style="margin-top: 10px;font-size: 16px;color: #ddd;">上传者 {$vo.uper} 上传时间 {$vo.ctime}</p>
+									<div class="zan_div" {if $vo['is_file'] == 1}style="margin-top:-92px;"{/if}>
+										<div class="info-box {$vo.ok}">
+											<span class="info-box-icon dianzan" attr-id="{$vo.id}"><i class="fa fa-thumbs-o-up"></i></span>
+											<input type="hidden" class="z_or_c" value="0" />
+											<div class="info-box-content" style="width: 114px;">
+												<span class="info-box-text">赞</span>
+												<span class="info-box-number">{$vo.zan}</span>
+												<div class="progress">
+													<div class="progress-bar" style="width: {$vo.percent}"></div>
+												</div>
+											</div>
+											<span class="info-box-icon caicai" attr-id="{$vo.id}" style="position: absolute;right: 0px;top: 0px;"><i class="fa fa-thumbs-o-down"></i></span>
+										</div>
+									</div>
+								</li>
+								{/volist}
+							</ul>
+							<div class="pagination">{$list->render()}</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	{include file="/public/footer"} {include file="/public/foot"}
+</body>
+<script>
+	$(".dianzan").click(function(){
+		var id = $(this).attr("attr-id");
+		var my = $(this);
+		var z_or_c = my.siblings(".z_or_c").val();
+		if(z_or_c == 0){
+			//点赞
+			zan_or_cai(my,"+1",1,"+","zan",id,"vocabulary");
+		}else if(z_or_c == 1){
+			//取消赞
+			zan_or_cai(my,"-1",0,"-","zan",id,"vocabulary");
+		}else if(z_or_c == 2){
+			layer.tips("这条你已经踩了",my,{tips:1});
+		}
+	})
+	//踩
+	$(".caicai").click(function(){
+		var id = $(this).attr("attr-id");
+		var my = $(this);
+		var z_or_c = my.siblings(".z_or_c").val();
+		if(z_or_c == 0){
+			//点踩
+			zan_or_cai(my,"+1",2,"+","cai",id,"vocabulary");
+		}else if(z_or_c == 2){
+			//取消踩
+			zan_or_cai(my,"-1",0,"-","cai",id,"vocabulary");
+		}else if(z_or_c == 1){
+			layer.tips("这条你已经赞了",my,{tips:1});
+		}
+	})
+</script>
+</html>

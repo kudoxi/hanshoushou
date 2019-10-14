@@ -1,0 +1,141 @@
+{include file="/public/head"}
+<link href="__PUBLIC__/assets/css/summernote.css" rel="stylesheet">	
+<style>
+	.file-input{
+		margin-bottom: 20px;
+	}
+	#editor {overflow:scroll; max-height:500px}
+</style>
+<title>上传录音</title>
+	</head>
+	<body class="skin-blue layout-boxed sidebar-mini" style="padding-top: 0px;">
+		<div class="wrapper" style="overflow: hidden; height: auto; min-height: 100%;">
+			{include file="/public/header"} {include file="/public/sidebar"}
+			<div class="content-wrapper" style="min-height: 1020px;">
+				<div class="box">
+					<div class="box-header with-border" style="padding-left: 50px;">
+						<h3 class="box-title">上传你完美的发音吧</h3>
+					</div>
+					<div class="box-body content" style="padding: 20px 50px;">
+						<form enctype="multipart/form-data">
+					        <div class="file-loading">
+					            <input id="kv-explorer" name="files" type="file" multiple>
+					        </div>
+							<input type="hidden" class="filename" value="" />
+					        <select class="form-control language">
+					        	{volist name="alllanguagelist" id="vo"  }
+					        	<option value="{$vo.id}">{$vo.name}</option>
+					        	{/volist}
+					        </select>
+					        <br />
+					        <select class="form-control table">
+					        	{volist name="study_typelist" id="vo"  }
+					        	<option value="{$key}">{$vo}</option>
+					        	{/volist}
+					        </select>
+					        <br />
+					        <input type="text" class="form-control name" value="" placeholder="请输入录音标题" />	
+					        <br />
+					        <script type="text/plain" id="content" name="content"></script>
+					        <br />
+					        <div style="float: right;">
+					        	<span class="btn btn-primary submit">提交</span>
+					        	<button type="reset" class="btn btn-default">重置</button>
+					        </div>
+					    </form>
+					</div>
+				</div>
+			</div>
+		</div>
+		{include file="/public/footer"} {include file="/public/foot"}
+	</body>
+	<script>
+		$(document).ready(function () {
+			$(function(){
+			  	var editorURL = '__WEB_ROOT__/';
+			  	var editorcontent = new baidu.editor.ui.Editor({
+			   		toolbars:[['Bold', 'italic','underline','|','fontsize','forecolor']],//
+			  	});
+			  	editorcontent.render('content');
+			
+			  	try {
+			   		editorcontent.sync();
+			  	} catch (err) {
+			  		
+			  	}
+			  	$("#content").css({'height':"300px"});
+			 })
+			//上传文件加载
+			$("#kv-explorer").fileinput({
+	            'theme': 'explorer-fa',
+	            'uploadUrl': "{:url('hanshou/base/do_upload')}",
+	            overwriteInitial: false,
+	            language : "zh",
+	            initialPreviewAsData: true,
+	          //  allowedFileTypes:["mp3","amr","m4a","wma","wav","ava","act","rec","vy1","vy2","vy3","vy4","sc4","dvf","msc"],
+	        });
+	        	
+			//上传成功后处理方法
+			$("#kv-explorer").on("fileuploaded", function(event, data, previewId, index) {
+				var filename = $(".filename").val();
+				var new_filename = filename + ","+data.response;
+				new_filename = new_filename.replace(/^,*|,*$/g,'');
+				$(".filename").val(new_filename);
+			});
+			//提交
+			$(".submit").click(function(){
+				var filename = $(".filename").val();
+				var language = $(".language").children("option:selected").val();
+				var table = $(".table").children("option:selected").val();
+				var name = $(".name").val();
+				var remark = UE.getEditor('content').getContent();
+				if(filename == ""){
+					layer.msg('你还没上传文件诶', {
+					  icon: 2,
+					  time: 2000 //2秒关闭（如果不配置，默认是3秒）
+					}, function(){
+					  //do something
+					});  
+					return;
+				}
+				if(name == ""){
+					if(table == "vocabulary"){
+						var msg = "单词";
+					}else if(table == "record"){
+						var msg = "字母";
+					}
+					layer.msg(msg+'名不能为空哦', {
+					  icon: 2,
+					  time: 2000 //2秒关闭（如果不配置，默认是3秒）
+					}, function(){
+					  //do something
+					});  
+					return;
+				}
+				$.ajax({
+					type:"post",
+					url:"{:url('hanshou/base/upload')}",
+					async:false,
+					data:{
+						filename:filename,
+						language : language,
+						table : table,
+						name : name,
+						remark : remark,
+					},
+					success:function(data){
+						layer.msg(data[1], {
+						  icon: 1,
+						  time: 2000 //2秒关闭（如果不配置，默认是3秒）
+						}, function(){
+						  //do something
+						});  
+						if(data[0] == '101'){
+							window.location.href = data[2];
+						}
+					}
+				});
+			})
+		})
+	</script>
+</html>

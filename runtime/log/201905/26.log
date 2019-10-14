@@ -1,0 +1,1372 @@
+---------------------------------------------------------------
+[ 2019-05-26T00:34:46+08:00 ] 115.206.181.36 GET /hanshou/public/hanshou/index/index.html
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/index/index.html [运行时间：0.067632s][吞吐率：14.79req/s] [内存消耗：5,125.85kb] [文件加载：81]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000038s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002409s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'x-forwarded-for' => '115.206.181.36, 103.27.186.4, 103.27.186.4',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'acoept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'antispame=1558809286; antispamkey=15bef7540ba497a39c0e074e0d826e55',
+  'kerid' => '11644',
+  'via' => '1.1 tyo2.jp.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'tyo2.jp.smartgslb.com="Surrogate/1.0"',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000573s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\hanshou\controller\Index->index[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Index.php ]
+[ info ] [ VIEW ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/public/../application/hanshou/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'need_wait',
+  4 => 'is_login',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000284s ] mysql:host=localhost;port=3306;dbname=sql_hanshoushou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_mywords` [ RunTime:0.001704s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` [ RunTime:0.000217s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '阿韩' and is_read != 1 ) LIMIT 1 [ RunTime:0.000150s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '韩宇佳' and is_read != 1 ) LIMIT 1 [ RunTime:0.000126s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'Ahan' and is_read != 1 ) LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'katja' and is_read != 1 ) LIMIT 1 [ RunTime:0.000126s ]
+---------------------------------------------------------------
+[ 2019-05-26T00:34:54+08:00 ] 115.206.181.36 GET /hanshou/public/hanshou/test/problem
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/test/problem [运行时间：0.038682s][吞吐率：25.85req/s] [内存消耗：3,117.65kb] [文件加载：63]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000052s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002223s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'test',
+    2 => 'problem',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'x-forwarded-for' => '115.206.181.36, 103.27.186.4, 103.27.186.4',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=ib6j740fobibrviss96hdrekj2; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1558802085; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1558802085; antispame=1558809290; antispamkey=0b09879e81a28f24140444ef3f36d971',
+  'kerid' => '11644',
+  'via' => '1.1 tyo2.jp.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'tyo2.jp.smartgslb.com="Surrogate/1.0"',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000460s ]
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected '{'[/data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Test.php:33]
+---------------------------------------------------------------
+[ 2019-05-26T00:36:24+08:00 ] 115.206.181.36 GET /hanshou/public/hanshou/test/problem
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/test/problem [运行时间：0.030688s][吞吐率：32.59req/s] [内存消耗：3,117.66kb] [文件加载：63]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000024s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001718s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'test',
+    2 => 'problem',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'x-forwarded-for' => '115.206.181.36, 103.27.186.4, 103.27.186.4',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=ib6j740fobibrviss96hdrekj2; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1558802085; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1558802085; antispame=1558809294; antispamkey=6a968c99ecad4fb18eb865d2997f3c68',
+  'kerid' => '11644',
+  'via' => '1.1 tyo2.jp.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'tyo2.jp.smartgslb.com="Surrogate/1.0"',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000450s ]
+[ info ] [ LOG ] INIT File
+[ error ] [4]syntax error, unexpected ':', expecting ']'[/data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Test.php:33]
+---------------------------------------------------------------
+[ 2019-05-26T00:38:06+08:00 ] 115.206.181.36 GET /hanshou/public/hanshou/test/problem
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/test/problem [运行时间：0.039465s][吞吐率：25.34req/s] [内存消耗：4,152.05kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000026s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001746s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'test',
+    2 => 'problem',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'x-forwarded-for' => '115.206.181.36, 103.27.186.4, 103.27.186.4',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'acccpt-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=ib6j740fobibrviss96hdrekj2; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1558802085; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1558802085; antispame=1558809384; antispamkey=90dd90532c482f77e352f88c50aac0e6',
+  'kerid' => '11644',
+  'via' => '1.1 tyo2.jp.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'tyo2.jp.smartgslb.com="Surrogate/1.0"',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000407s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-26T00:40:49+08:00 ] 115.206.181.36 GET /hanshou/public/hanshou/test/problem?nowpage=1
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/test/problem?nowpage=1 [运行时间：0.043104s][吞吐率：23.20req/s] [内存消耗：4,150.60kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000043s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001869s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'test',
+    2 => 'problem',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'x-forwarded-for' => '115.206.181.36, 103.27.186.4, 103.27.186.4',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'null',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'aecept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'kerid' => '11644',
+  'via' => '1.1 tyo2.jp.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'tyo2.jp.smartgslb.com="Surrogate/1.0"',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'nowpage' => '1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000454s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-26T00:41:15+08:00 ] 115.206.181.36 GET /hanshou/public/hanshou/test/jieguo
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/test/jieguo [运行时间：0.039232s][吞吐率：25.49req/s] [内存消耗：4,066.51kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000023s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001714s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'test',
+    2 => 'jieguo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'x-forwarded-for' => '115.206.181.36, 103.27.186.4, 103.27.186.4',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=ib6j740fobibrviss96hdrekj2; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1558802085; antispame=1558809486; antispamkey=8ce97d4ef886b157068c785383935962; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1558802285',
+  'kerid' => '11644',
+  'via' => '1.1 tyo2.jp.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'tyo2.jp.smartgslb.com="Surrogate/1.0"',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000405s ]
+[ info ] [ RUN ] app\hanshou\controller\Test->jieguo[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Test.php ]
+[ info ] [ VIEW ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/public/../application/hanshou/view/test/jieguo.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-26T00:41:16+08:00 ] 115.206.181.36 GET /hanshou/public/hanshou/test/_PUBLIC__/assets/test/images/erweima-p-500.png
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/test/_PUBLIC__/assets/test/images/erweima-p-500.png [运行时间：0.044671s][吞吐率：22.39req/s] [内存消耗：4,152.49kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000040s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002042s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'test',
+    2 => '_PUBLIC__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.hanshoushou.com/hanshou/public/hanshou/test/jieguo',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'antispame=1558809290; antispamkey=cc2d9bfd916d3b1eb37a9093507b9756',
+  'kerid' => '11644',
+  'via' => '1.1 ntg1.cn.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'ntg1.cn.smartgslb.com="Surrogate/1.0"',
+  'x-forwarded-for' => '115.206.181.36, 127.0.0.1',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'assets' => 'test',
+  'images' => 'erweima-p-500.png',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000490s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-26T00:41:16+08:00 ] 115.206.181.36 GET /hanshou/public/hanshou/test/_PUBLIC__/assets/test/images/logo.png
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/test/_PUBLIC__/assets/test/images/logo.png [运行时间：0.057461s][吞吐率：17.40req/s] [内存消耗：4,152.40kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000049s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002690s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'test',
+    2 => '_PUBLIC__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.hanshoushou.com/hanshou/public/hanshou/test/jieguo',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'antispame=1558809290; antispamkey=cc2d9bfd916d3b1eb37a9093507b9756',
+  'kerid' => '11644',
+  'via' => '1.1 ntg1.cn.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'ntg1.cn.smartgslb.com="Surrogate/1.0"',
+  'x-forwarded-for' => '115.206.181.36, 127.0.0.1',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'assets' => 'test',
+  'images' => 'logo.png',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000657s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-26T00:41:17+08:00 ] 115.206.181.36 GET /hanshou/public/hanshou/test/_PUBLIC__/assets/test/images/erweima-p-500.png
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/test/_PUBLIC__/assets/test/images/erweima-p-500.png [运行时间：0.038997s][吞吐率：25.64req/s] [内存消耗：4,152.49kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000038s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001718s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'test',
+    2 => '_PUBLIC__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.hanshoushou.com/hanshou/public/hanshou/test/jieguo',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'antispame=1558809677; antispamkey=a773005bba3960d39f3f97f17cbf6661',
+  'kerid' => '11644',
+  'via' => '1.1 ntg1.cn.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'ntg1.cn.smartgslb.com="Surrogate/1.0"',
+  'x-forwarded-for' => '115.206.181.36, 127.0.0.1',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'assets' => 'test',
+  'images' => 'erweima-p-500.png',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000399s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-26T00:41:25+08:00 ] 115.206.181.36 GET /hanshou/public/hanshou/test/problems
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/test/problems [运行时间：0.039186s][吞吐率：25.52req/s] [内存消耗：4,061.30kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000023s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001802s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'test',
+    2 => 'problems',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'x-forwarded-for' => '115.206.181.36, 103.27.186.4, 103.27.186.4',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=ib6j740fobibrviss96hdrekj2; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1558802085; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1558802285; antispame=1558809677; antispamkey=b47c5cca16669cb0ae1100f5497670ab',
+  'kerid' => '11644',
+  'via' => '1.1 tyo2.jp.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'tyo2.jp.smartgslb.com="Surrogate/1.0"',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000442s ]
+[ info ] [ RUN ] app\hanshou\controller\Test->problems[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-26T00:41:35+08:00 ] 115.206.181.36 GET /hanshou/public/hanshou/test/problems?nowpage=1
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/test/problems?nowpage=1 [运行时间：0.037359s][吞吐率：26.77req/s] [内存消耗：4,059.81kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000036s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001681s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'test',
+    2 => 'problems',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'x-forwarded-for' => '115.206.181.36, 103.27.186.4, 103.27.186.4',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'null',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'kerid' => '11644',
+  'via' => '1.1 tyo2.jp.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'tyo2.jp.smartgslb.com="Surrogate/1.0"',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'nowpage' => '1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000409s ]
+[ info ] [ RUN ] app\hanshou\controller\Test->problems[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-26T00:57:37+08:00 ] 115.206.181.36 GET /hanshou/public/hanshou/test/problems?nowpage=1
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/test/problems?nowpage=1 [运行时间：0.033453s][吞吐率：29.89req/s] [内存消耗：3,116.52kb] [文件加载：63]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000040s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001821s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'test',
+    2 => 'problems',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'x-forwarded-for' => '115.206.181.36, 154.209.234.204, 154.209.234.204',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'null',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'accopt-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'kerid' => '11644',
+  'via' => '1.1 hkg2.hk.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'hkg2.hk.smartgslb.com="Surrogate/1.0"',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'nowpage' => '1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000439s ]
+[ info ] [ LOG ] INIT File
+[ error ] [4]syntax error, unexpected ':', expecting ')'[/data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Test.php:40]
+---------------------------------------------------------------
+[ 2019-05-26T00:57:51+08:00 ] 115.206.181.36 GET /hanshou/public/hanshou/test/problems
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/test/problems [运行时间：0.030796s][吞吐率：32.47req/s] [内存消耗：3,117.75kb] [文件加载：63]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000036s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001718s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'test',
+    2 => 'problems',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'x-forwarded-for' => '115.206.181.36, 154.209.234.204, 154.209.234.204',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=ib6j740fobibrviss96hdrekj2; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1558802085; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1558802285; antispame=1558809685; antispamkey=44127d57d059e6bbddfced2c5c1fa7c1',
+  'kerid' => '11644',
+  'via' => '1.1 hkg2.hk.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'hkg2.hk.smartgslb.com="Surrogate/1.0"',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000398s ]
+[ info ] [ LOG ] INIT File
+[ error ] [4]syntax error, unexpected ':', expecting ')'[/data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Test.php:40]
+---------------------------------------------------------------
+[ 2019-05-26T00:58:12+08:00 ] 115.206.181.36 GET /hanshou/public/hanshou/test/problems
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/test/problems [运行时间：0.038733s][吞吐率：25.82req/s] [内存消耗：4,061.59kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000039s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001737s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'test',
+    2 => 'problems',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'x-forwarded-for' => '115.206.181.36, 154.209.234.204, 154.209.234.204',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=ib6j740fobibrviss96hdrekj2; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1558802085; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1558802285; antispame=1558810672; antispamkey=b6e06d02b874cdfe18dd1030b5a43c05',
+  'kerid' => '11644',
+  'via' => '1.1 hkg2.hk.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'hkg2.hk.smartgslb.com="Surrogate/1.0"',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000400s ]
+[ info ] [ RUN ] app\hanshou\controller\Test->problems[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-26T00:58:16+08:00 ] 115.206.181.36 GET /hanshou/public/hanshou/test/problems?nowpage=1
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/test/problems?nowpage=1 [运行时间：0.045309s][吞吐率：22.07req/s] [内存消耗：4,059.99kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000040s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001774s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'test',
+    2 => 'problems',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'x-forwarded-for' => '115.206.181.36, 154.209.234.204, 154.209.234.204',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'null',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'kerid' => '11644',
+  'via' => '1.1 hkg2.hk.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'hkg2.hk.smartgslb.com="Surrogate/1.0"',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'nowpage' => '1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000626s ]
+[ info ] [ RUN ] app\hanshou\controller\Test->problems[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-26T01:05:48+08:00 ] 115.206.181.36 GET /hanshou/public/hanshou/test/problems?nowpage=1
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/test/problems?nowpage=1 [运行时间：0.041237s][吞吐率：24.25req/s] [内存消耗：4,059.98kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000073s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001850s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'test',
+    2 => 'problems',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'x-forwarded-for' => '115.206.181.36, 103.27.186.4, 103.27.186.4',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'null',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'accept-enooding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'kerid' => '11644',
+  'via' => '1.1 tyo2.jp.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'tyo2.jp.smartgslb.com="Surrogate/1.0"',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'nowpage' => '1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000503s ]
+[ info ] [ RUN ] app\hanshou\controller\Test->problems[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-26T01:06:35+08:00 ] 115.206.181.36 GET /hanshou/public/hanshou/test/problems?nowpage=1
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/test/problems?nowpage=1 [运行时间：0.037792s][吞吐率：26.46req/s] [内存消耗：4,059.98kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000036s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001691s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'test',
+    2 => 'problems',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'x-forwarded-for' => '115.206.181.36, 103.27.186.4, 103.27.186.4',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'null',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'accept-eneoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'kerid' => '11644',
+  'via' => '1.1 tyo2.jp.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'tyo2.jp.smartgslb.com="Surrogate/1.0"',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'nowpage' => '1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000417s ]
+[ info ] [ RUN ] app\hanshou\controller\Test->problems[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-26T01:41:25+08:00 ] 115.206.181.36 GET /hanshou/public/hanshou/test/problems?nowpage=1
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/test/problems?nowpage=1 [运行时间：0.042487s][吞吐率：23.54req/s] [内存消耗：4,060.04kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000030s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001991s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'test',
+    2 => 'problems',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'x-forwarded-for' => '115.206.181.36, 103.27.186.4, 103.27.186.4',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'null',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'aocept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'kerid' => '11644',
+  'via' => '1.1 tyo2.jp.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'tyo2.jp.smartgslb.com="Surrogate/1.0"',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'nowpage' => '1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000571s ]
+[ info ] [ RUN ] app\hanshou\controller\Test->problems[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-26T01:45:02+08:00 ] 115.206.181.36 GET /hanshou/public/hanshou/test/problems?nowpage=1
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/test/problems?nowpage=1 [运行时间：0.038720s][吞吐率：25.83req/s] [内存消耗：4,060.04kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000044s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001745s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'test',
+    2 => 'problems',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'x-forwarded-for' => '115.206.181.36, 103.27.186.4, 103.27.186.4',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'null',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'acccpt-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'kerid' => '11644',
+  'via' => '1.1 tyo2.jp.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'tyo2.jp.smartgslb.com="Surrogate/1.0"',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'nowpage' => '1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000422s ]
+[ info ] [ RUN ] app\hanshou\controller\Test->problems[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-26T01:51:43+08:00 ] 66.249.65.205 GET /hanshou/public/hanshou/index/index.html
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/index/index.html [运行时间：0.051685s][吞吐率：19.35req/s] [内存消耗：5,125.07kb] [文件加载：81]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000036s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001787s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'cookie' => 'antispame=1558813897; antispamkey=6d38922390847edf2e3c086fc711be56',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'from' => 'googlebot(at)googlebot.com',
+  'user-agent' => 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+  'accept-encoding' => 'gzip,deflate,br',
+  'kerid' => '11644',
+  'via' => '1.0 lax1.us.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'lax1.us.smartgslb.com="Surrogate/1.0"',
+  'x-forwarded-for' => '66.249.65.205, 127.0.0.1',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000416s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\hanshou\controller\Index->index[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Index.php ]
+[ info ] [ VIEW ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/public/../application/hanshou/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'need_wait',
+  4 => 'is_login',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000244s ] mysql:host=localhost;port=3306;dbname=sql_hanshoushou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_mywords` [ RunTime:0.003364s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '阿韩' and is_read != 1 ) LIMIT 1 [ RunTime:0.000120s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '韩宇佳' and is_read != 1 ) LIMIT 1 [ RunTime:0.000096s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'Ahan' and is_read != 1 ) LIMIT 1 [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'katja' and is_read != 1 ) LIMIT 1 [ RunTime:0.000100s ]
+---------------------------------------------------------------
+[ 2019-05-26T01:58:48+08:00 ] 115.206.181.36 GET /hanshou/public/hanshou/test/problems?nowpage=1
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/test/problems?nowpage=1 [运行时间：0.038127s][吞吐率：26.23req/s] [内存消耗：4,062.02kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000040s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001727s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'test',
+    2 => 'problems',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'x-forwarded-for' => '115.206.181.36, 103.27.186.4, 103.27.186.4',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'null',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'accopt-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'kerid' => '11644',
+  'via' => '1.1 tyo2.jp.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'tyo2.jp.smartgslb.com="Surrogate/1.0"',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'nowpage' => '1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000425s ]
+[ info ] [ RUN ] app\hanshou\controller\Test->problems[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-26T01:58:50+08:00 ] 115.206.181.36 POST /hanshou/public/hanshou/test/sub
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/test/sub [运行时间：0.040215s][吞吐率：24.87req/s] [内存消耗：4,165.23kb] [文件加载：77]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000042s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001722s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'test',
+    2 => 'sub',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'x-forwarded-for' => '115.206.181.36, 103.27.186.4, 103.27.186.4',
+  'content-length' => '22',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'null',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'kerid' => '11644',
+  'via' => '1.1 tyo2.jp.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'tyo2.jp.smartgslb.com="Surrogate/1.0"',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'nowpage' => '2',
+  'problem_id' => '2',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000417s ]
+[ info ] [ RUN ] app\hanshou\controller\Test->sub[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: choice_id[/data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Test.php:49]
+---------------------------------------------------------------
+[ 2019-05-26T01:59:53+08:00 ] 115.206.181.36 GET /hanshou/public/hanshou/test/problems?nowpage=1
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/test/problems?nowpage=1 [运行时间：0.039096s][吞吐率：25.58req/s] [内存消耗：4,062.02kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000038s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001822s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'test',
+    2 => 'problems',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'x-forwarded-for' => '115.206.181.36, 103.27.186.4, 103.27.186.4',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'null',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'kerid' => '11644',
+  'via' => '1.1 tyo2.jp.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'tyo2.jp.smartgslb.com="Surrogate/1.0"',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'nowpage' => '1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000466s ]
+[ info ] [ RUN ] app\hanshou\controller\Test->problems[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-26T01:59:56+08:00 ] 115.206.181.36 POST /hanshou/public/hanshou/test/sub
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/test/sub [运行时间：0.040733s][吞吐率：24.55req/s] [内存消耗：4,063.96kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000049s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001886s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'test',
+    2 => 'sub',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'x-forwarded-for' => '115.206.181.36, 103.27.186.4, 103.27.186.4',
+  'content-length' => '35',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'null',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'kerid' => '11644',
+  'via' => '1.1 tyo2.jp.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'tyo2.jp.smartgslb.com="Surrogate/1.0"',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'nowpage' => '2',
+  'problem_id' => '2',
+  'choice_id' => '21',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000597s ]
+[ info ] [ RUN ] app\hanshou\controller\Test->sub[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-26T01:59:56+08:00 ] 115.206.181.36 GET /hanshou/public/hanshou/test/problems?nowpage=2
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/test/problems?nowpage=2 [运行时间：0.038818s][吞吐率：25.76req/s] [内存消耗：4,062.02kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000028s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001846s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'test',
+    2 => 'problems',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'x-forwarded-for' => '115.206.181.36, 103.27.186.4, 103.27.186.4',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'null',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'kerid' => '11644',
+  'via' => '1.1 tyo2.jp.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'tyo2.jp.smartgslb.com="Surrogate/1.0"',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'nowpage' => '2',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000414s ]
+[ info ] [ RUN ] app\hanshou\controller\Test->problems[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-26T02:00:46+08:00 ] 115.206.181.36 GET /hanshou/public/hanshou/test/problems?nowpage=1
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/test/problems?nowpage=1 [运行时间：0.042961s][吞吐率：23.28req/s] [内存消耗：4,062.02kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000024s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001764s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'test',
+    2 => 'problems',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'x-forwarded-for' => '115.206.181.36, 103.27.186.4, 103.27.186.4',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'null',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'kerid' => '11644',
+  'via' => '1.1 tyo2.jp.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'tyo2.jp.smartgslb.com="Surrogate/1.0"',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'nowpage' => '1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000405s ]
+[ info ] [ RUN ] app\hanshou\controller\Test->problems[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-26T02:00:49+08:00 ] 115.206.181.36 POST /hanshou/public/hanshou/test/sub
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/test/sub [运行时间：0.038340s][吞吐率：26.08req/s] [内存消耗：4,063.96kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000025s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001782s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'test',
+    2 => 'sub',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'x-forwarded-for' => '115.206.181.36, 103.27.186.4, 103.27.186.4',
+  'content-length' => '35',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'null',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'kerid' => '11644',
+  'via' => '1.1 tyo2.jp.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'tyo2.jp.smartgslb.com="Surrogate/1.0"',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'nowpage' => '2',
+  'problem_id' => '2',
+  'choice_id' => '33',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000445s ]
+[ info ] [ RUN ] app\hanshou\controller\Test->sub[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-26T02:00:49+08:00 ] 115.206.181.36 GET /hanshou/public/hanshou/test/problems?nowpage=2
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/test/problems?nowpage=2 [运行时间：0.040756s][吞吐率：24.54req/s] [内存消耗：4,062.02kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000037s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001984s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'test',
+    2 => 'problems',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'x-forwarded-for' => '115.206.181.36, 103.27.186.4, 103.27.186.4',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'null',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'kerid' => '11644',
+  'via' => '1.1 tyo2.jp.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'tyo2.jp.smartgslb.com="Surrogate/1.0"',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'nowpage' => '2',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000447s ]
+[ info ] [ RUN ] app\hanshou\controller\Test->problems[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-26T02:01:17+08:00 ] 115.206.181.36 POST /hanshou/public/hanshou/test/sub
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/test/sub [运行时间：0.037541s][吞吐率：26.64req/s] [内存消耗：4,063.87kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000024s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001717s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'test',
+    2 => 'sub',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'x-forwarded-for' => '115.206.181.36, 103.27.186.4, 103.27.186.4',
+  'content-length' => '35',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'null',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'kerid' => '11644',
+  'via' => '1.1 tyo2.jp.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'tyo2.jp.smartgslb.com="Surrogate/1.0"',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'nowpage' => '3',
+  'problem_id' => '2',
+  'choice_id' => '21',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000404s ]
+[ info ] [ RUN ] app\hanshou\controller\Test->sub[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-26T02:01:17+08:00 ] 115.206.181.36 GET /hanshou/public/hanshou/test/problems?nowpage=3
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/test/problems?nowpage=3 [运行时间：0.037995s][吞吐率：26.32req/s] [内存消耗：4,061.95kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000024s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001717s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'test',
+    2 => 'problems',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'x-forwarded-for' => '115.206.181.36, 103.27.186.4, 103.27.186.4',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'null',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'accept-eneoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'kerid' => '11644',
+  'via' => '1.1 tyo2.jp.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'tyo2.jp.smartgslb.com="Surrogate/1.0"',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'nowpage' => '3',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000405s ]
+[ info ] [ RUN ] app\hanshou\controller\Test->problems[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-26T02:01:37+08:00 ] 115.206.181.36 POST /hanshou/public/hanshou/test/sub
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/test/sub [运行时间：0.046926s][吞吐率：21.31req/s] [内存消耗：4,063.87kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000060s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002251s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'test',
+    2 => 'sub',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'x-forwarded-for' => '115.206.181.36, 103.27.186.4, 103.27.186.4',
+  'content-length' => '35',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'null',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'kerid' => '11644',
+  'via' => '1.1 tyo2.jp.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'tyo2.jp.smartgslb.com="Surrogate/1.0"',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'nowpage' => '4',
+  'problem_id' => '2',
+  'choice_id' => '21',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000618s ]
+[ info ] [ RUN ] app\hanshou\controller\Test->sub[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-26T02:01:37+08:00 ] 115.206.181.36 GET /hanshou/public/hanshou/test/problems?nowpage=4
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/test/problems?nowpage=4 [运行时间：0.039716s][吞吐率：25.18req/s] [内存消耗：4,061.95kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000043s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001717s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'test',
+    2 => 'problems',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'x-forwarded-for' => '115.206.181.36, 103.27.186.4, 103.27.186.4',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'null',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'accept-enccding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'kerid' => '11644',
+  'via' => '1.1 tyo2.jp.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'tyo2.jp.smartgslb.com="Surrogate/1.0"',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'nowpage' => '4',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000476s ]
+[ info ] [ RUN ] app\hanshou\controller\Test->problems[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-26T02:01:40+08:00 ] 115.206.181.36 POST /hanshou/public/hanshou/test/sub
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/test/sub [运行时间：0.039290s][吞吐率：25.45req/s] [内存消耗：4,063.87kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000023s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001721s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'test',
+    2 => 'sub',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'x-forwarded-for' => '115.206.181.36, 103.27.186.4, 103.27.186.4',
+  'content-length' => '35',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'null',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'kerid' => '11644',
+  'via' => '1.1 tyo2.jp.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'tyo2.jp.smartgslb.com="Surrogate/1.0"',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'nowpage' => '5',
+  'problem_id' => '2',
+  'choice_id' => '33',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000410s ]
+[ info ] [ RUN ] app\hanshou\controller\Test->sub[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-26T02:01:40+08:00 ] 115.206.181.36 GET /hanshou/public/hanshou/test/problems?nowpage=5
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/test/problems?nowpage=5 [运行时间：0.037468s][吞吐率：26.69req/s] [内存消耗：4,061.95kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000024s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001697s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'test',
+    2 => 'problems',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'x-forwarded-for' => '115.206.181.36, 103.27.186.4, 103.27.186.4',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'null',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'aocept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'kerid' => '11644',
+  'via' => '1.1 tyo2.jp.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'tyo2.jp.smartgslb.com="Surrogate/1.0"',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'nowpage' => '5',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000401s ]
+[ info ] [ RUN ] app\hanshou\controller\Test->problems[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-26T02:01:42+08:00 ] 115.206.181.36 POST /hanshou/public/hanshou/test/sub
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/test/sub [运行时间：0.038086s][吞吐率：26.26req/s] [内存消耗：4,063.87kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000035s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001714s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'test',
+    2 => 'sub',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'x-forwarded-for' => '115.206.181.36, 103.27.186.4, 103.27.186.4',
+  'content-length' => '35',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'null',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'kerid' => '11644',
+  'via' => '1.1 tyo2.jp.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'tyo2.jp.smartgslb.com="Surrogate/1.0"',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'nowpage' => '6',
+  'problem_id' => '2',
+  'choice_id' => '34',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000403s ]
+[ info ] [ RUN ] app\hanshou\controller\Test->sub[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Test.php ]
+[ info ] [ LOG ] INIT File

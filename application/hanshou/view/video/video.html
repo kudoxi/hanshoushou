@@ -1,0 +1,60 @@
+{include file="/public/head"}
+<title>字母</title>
+<style>
+.zan_div{
+	position: absolute;
+    width: 295px;
+    margin-top: -112px;
+    right: 0;
+    margin-right: 20px;
+}
+.dianzan:hover,.caicai:hover{
+	background-color: #00193A;
+	cursor: pointer;
+}
+.zan_active{
+	background-color: #00193A;
+}
+</style>
+	</head>
+	<body class="skin-blue layout-boxed sidebar-mini" style="padding-top: 0px;">
+		<div class="wrapper" style="overflow: hidden; height: auto; min-height: 100%;">
+			{include file="/public/header"}{include file="/public/sidebar"}
+			<div class="content-wrapper" style="min-height: 1020px;">
+				<div class="box">
+					<div class="box-header with-border" style="padding-left: 50px;">
+						<h3 class="box-title">年年（years and years）</h3>
+					</div>
+					<div class="box-body content" style="padding: 20px 50px;">
+						<div class="container" style="width: 100%">
+							<div class="row">
+								<video id="video"  controls>
+                  <source src="Y_and_Y_S01E0{$n}.mp4" type="video/mp4">
+                  <!-- <track label="中文字幕" kind="subtitles" chapters metadata srclang="zh" src="zimu6.srt" default>
+                  <track label="ABC" kind="subtitles" srclang="de" src="zimu6.srt">
+                  <track label="Number" kind="subtitles" srclang="es" src="zimu6.srt"> -->
+                </video>
+                <!-- <button type="button" style="text-align: center;" onclick="launchFullScreen(document.getElementById('video'))">全屏</button> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		{include file="/public/footer"} {include file="/public/foot"}
+	</body>
+	<script type="text/javascript">
+    //全屏幕播放
+    function launchFullScreen(element) {
+      if(element.requestFullScreen) {
+        element.requestFullScreen();
+      } else if(element.mozRequestFullScreen) {
+        element.mozRequestFullScreen();
+      } else if(element.webkitRequestFullScreen) {
+        element.webkitRequestFullScreen();
+      }
+    }
+    </script>
+</html>
+
+    

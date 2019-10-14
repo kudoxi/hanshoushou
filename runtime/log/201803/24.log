@@ -1,0 +1,2072 @@
+---------------------------------------------------------------
+[ 2018-03-24T14:09:46+08:00 ] 116.235.34.20 GET /hanshou/public/hanshou/map/map2.html
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/map/map2.html [运行时间：0.095455s][吞吐率：10.48req/s] [内存消耗：5,881.68kb] [文件加载：92]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000027s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003014s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'map',
+    2 => 'map2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; Hm_lvt_e0781425189b1daba20daf3c69d85915=1521120098; PHPSESSID=gv7ovi5vq85ls1amgpp554ojc1; antispame=1521826600; antispamkey=fe56d8dcddafdc0f1cfce644219e4749',
+  'kerid' => '11644',
+  'via' => '1.1 hkg4.hk.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'hkg4.hk.smartgslb.com="Surrogate/1.0"',
+  'x-forwarded-for' => '116.235.34.20, 127.0.0.1',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000879s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\hanshou\controller\Map->map2[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Map.php ]
+[ info ] [ VIEW ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/public/../application/hanshou/view/map/map2.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'need_wait',
+  4 => 'is_login',
+  5 => 'date2',
+  6 => 'date1',
+  7 => 'map_address',
+  8 => 'json_arr',
+  9 => 'arr',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000259s ] mysql:host=localhost;port=3306;dbname=sql_hanshoushou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_mywords` [ RunTime:0.004589s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '阿韩' and is_read != 1 ) LIMIT 1 [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '韩宇佳' and is_read != 1 ) LIMIT 1 [ RunTime:0.000086s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'Ahan' and is_read != 1 ) LIMIT 1 [ RunTime:0.000079s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'katja' and is_read != 1 ) LIMIT 1 [ RunTime:0.000080s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_map` [ RunTime:0.004484s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hs_map` WHERE  (  1=1 ) LIMIT 1 [ RunTime:0.000109s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_map` WHERE  (  1=1 ) ORDER BY id DESC LIMIT 0,10 [ RunTime:0.000084s ]
+---------------------------------------------------------------
+[ 2018-03-24T14:09:49+08:00 ] 116.235.34.20 GET /hanshou/public/hanshou/map/dao.html
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/map/dao.html [运行时间：0.056807s][吞吐率：17.60req/s] [内存消耗：5,643.02kb] [文件加载：88]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000047s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001537s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'map',
+    2 => 'dao',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.hanshoushou.com/hanshou/public/hanshou/map/map2.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; Hm_lvt_e0781425189b1daba20daf3c69d85915=1521120098; PHPSESSID=gv7ovi5vq85ls1amgpp554ojc1; antispame=1521878987; antispamkey=c718c469f47b723979ce56001c8b7cfc',
+  'kerid' => '11644',
+  'via' => '1.1 hkg4.hk.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'hkg4.hk.smartgslb.com="Surrogate/1.0"',
+  'x-forwarded-for' => '116.235.34.20, 127.0.0.1',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000400s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\hanshou\controller\Map->dao[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Map.php ]
+[ info ] [ VIEW ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/public/../application/hanshou/view/map/dao.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'need_wait',
+  4 => 'is_login',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000274s ] mysql:host=localhost;port=3306;dbname=sql_hanshoushou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_mywords` [ RunTime:0.004374s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` [ RunTime:0.000153s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '阿韩' and is_read != 1 ) LIMIT 1 [ RunTime:0.000149s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '韩宇佳' and is_read != 1 ) LIMIT 1 [ RunTime:0.000130s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'Ahan' and is_read != 1 ) LIMIT 1 [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'katja' and is_read != 1 ) LIMIT 1 [ RunTime:0.000120s ]
+---------------------------------------------------------------
+[ 2018-03-24T14:09:51+08:00 ] 116.235.34.20 GET /hanshou/public/hanshou/map/map2.html
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/map/map2.html [运行时间：0.054121s][吞吐率：18.48req/s] [内存消耗：5,666.73kb] [文件加载：90]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000045s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001521s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'map',
+    2 => 'map2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.hanshoushou.com/hanshou/public/hanshou/map/dao.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; Hm_lvt_e0781425189b1daba20daf3c69d85915=1521120098; PHPSESSID=gv7ovi5vq85ls1amgpp554ojc1; antispame=1521878989; antispamkey=e27f9d562e9c7bc37e119199162c64f6',
+  'kerid' => '11644',
+  'via' => '1.1 hkg4.hk.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'hkg4.hk.smartgslb.com="Surrogate/1.0"',
+  'x-forwarded-for' => '116.235.34.20, 127.0.0.1',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000401s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\hanshou\controller\Map->map2[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Map.php ]
+[ info ] [ VIEW ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/public/../application/hanshou/view/map/map2.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'need_wait',
+  4 => 'is_login',
+  5 => 'date2',
+  6 => 'date1',
+  7 => 'map_address',
+  8 => 'json_arr',
+  9 => 'arr',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000243s ] mysql:host=localhost;port=3306;dbname=sql_hanshoushou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_mywords` [ RunTime:0.002161s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` [ RunTime:0.000160s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '阿韩' and is_read != 1 ) LIMIT 1 [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '韩宇佳' and is_read != 1 ) LIMIT 1 [ RunTime:0.000085s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'Ahan' and is_read != 1 ) LIMIT 1 [ RunTime:0.000078s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'katja' and is_read != 1 ) LIMIT 1 [ RunTime:0.000079s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_map` [ RunTime:0.001312s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hs_map` WHERE  (  1=1 ) LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_map` WHERE  (  1=1 ) ORDER BY id DESC LIMIT 0,10 [ RunTime:0.000083s ]
+---------------------------------------------------------------
+[ 2018-03-24T14:09:52+08:00 ] 116.235.34.20 GET /hanshou/public/hanshou/map/dao.html
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/map/dao.html [运行时间：0.050420s][吞吐率：19.83req/s] [内存消耗：5,449.37kb] [文件加载：86]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000039s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001572s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'map',
+    2 => 'dao',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.hanshoushou.com/hanshou/public/hanshou/map/map2.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; Hm_lvt_e0781425189b1daba20daf3c69d85915=1521120098; PHPSESSID=gv7ovi5vq85ls1amgpp554ojc1; antispame=1521878991; antispamkey=53a8e28d6c8d777b9ee7d682f498ca48',
+  'kerid' => '11644',
+  'via' => '1.1 hkg4.hk.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'hkg4.hk.smartgslb.com="Surrogate/1.0"',
+  'x-forwarded-for' => '116.235.34.20, 127.0.0.1',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000395s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\hanshou\controller\Map->dao[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Map.php ]
+[ info ] [ VIEW ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/public/../application/hanshou/view/map/dao.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'need_wait',
+  4 => 'is_login',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000237s ] mysql:host=localhost;port=3306;dbname=sql_hanshoushou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_mywords` [ RunTime:0.002116s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '阿韩' and is_read != 1 ) LIMIT 1 [ RunTime:0.000129s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '韩宇佳' and is_read != 1 ) LIMIT 1 [ RunTime:0.000092s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'Ahan' and is_read != 1 ) LIMIT 1 [ RunTime:0.000078s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'katja' and is_read != 1 ) LIMIT 1 [ RunTime:0.000083s ]
+---------------------------------------------------------------
+[ 2018-03-24T14:09:57+08:00 ] 116.235.34.20 POST /hanshou/public/Hanshou/map/excelpost.html
+[ info ] www.hanshoushou.com/hanshou/public/Hanshou/map/excelpost.html [运行时间：0.130235s][吞吐率：7.68req/s] [内存消耗：11,042.63kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000037s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001537s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Hanshou',
+    1 => 'map',
+    2 => 'excelpost',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'content-length' => '22233',
+  'origin' => 'http://www.hanshoushou.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarylQ9g18QlDB6PxClk',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.hanshoushou.com/hanshou/public/hanshou/map/dao.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; Hm_lvt_e0781425189b1daba20daf3c69d85915=1521120098; PHPSESSID=gv7ovi5vq85ls1amgpp554ojc1; antispame=1521878992; antispamkey=982432e63f96e2869309e8030f16ced8',
+  'kerid' => '11644',
+  'via' => '1.1 hkg4.hk.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'hkg4.hk.smartgslb.com="Surrogate/1.0"',
+  'x-forwarded-for' => '116.235.34.20, 127.0.0.1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000371s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\hanshou\controller\Map->excelpost[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Map.php ]
+[ info ] [ VIEW ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/public/../application/common/view/tpl/dispatch_jump.tpl [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'need_wait',
+  4 => 'is_login',
+  5 => 'code',
+  6 => 'msg',
+  7 => 'data',
+  8 => 'url',
+  9 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000212s ] mysql:host=localhost;port=3306;dbname=sql_hanshoushou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_mywords` [ RunTime:0.002115s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` [ RunTime:0.000120s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '阿韩' and is_read != 1 ) LIMIT 1 [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '韩宇佳' and is_read != 1 ) LIMIT 1 [ RunTime:0.000088s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'Ahan' and is_read != 1 ) LIMIT 1 [ RunTime:0.000087s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'katja' and is_read != 1 ) LIMIT 1 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_map` [ RunTime:0.004078s ]
+[ sql ] [ SQL ] INSERT INTO `hs_map` (`address` , `ctime` , `rtime` , `remark`) VALUES ('白马路同德路' , '2018-03-24 14:09:57' , '2018-03-14 08:08:16.0' , '顶顶顶顶') [ RunTime:0.000323s ]
+[ sql ] [ SQL ] UPDATE `hs_map`  SET `paixu`=17  WHERE  (  id = 17 ) [ RunTime:0.000132s ]
+[ sql ] [ SQL ] INSERT INTO `hs_map` (`address` , `ctime` , `rtime` , `remark`) VALUES ('白马路同德路' , '2018-03-24 14:09:57' , '2018-03-14 08:06:02.0' , '鄂塞热') [ RunTime:0.000118s ]
+[ sql ] [ SQL ] UPDATE `hs_map`  SET `paixu`=18  WHERE  (  id = 18 ) [ RunTime:0.000109s ]
+[ sql ] [ SQL ] INSERT INTO `hs_map` (`address` , `ctime` , `rtime` , `remark`) VALUES ('青年横路江滨西大道' , '2018-03-24 14:09:57' , '2018-03-13 11:32:54.0' , '阿斯顿撒旦') [ RunTime:0.000116s ]
+[ sql ] [ SQL ] UPDATE `hs_map`  SET `paixu`=19  WHERE  (  id = 19 ) [ RunTime:0.000114s ]
+[ sql ] [ SQL ] INSERT INTO `hs_map` (`address` , `ctime` , `rtime` , `remark`) VALUES ('青年横路江滨西大道' , '2018-03-24 14:09:57' , '2018-03-13 11:32:49.0' , '啊顶顶顶顶') [ RunTime:0.000111s ]
+[ sql ] [ SQL ] UPDATE `hs_map`  SET `paixu`=20  WHERE  (  id = 20 ) [ RunTime:0.000109s ]
+[ sql ] [ SQL ] INSERT INTO `hs_map` (`address` , `ctime` , `rtime` , `remark`) VALUES ('上海海洋大学' , '2018-03-24 14:09:57' , '2018-03-14 08:08:16.0' , '') [ RunTime:0.000114s ]
+[ sql ] [ SQL ] UPDATE `hs_map`  SET `paixu`=21  WHERE  (  id = 21 ) [ RunTime:0.000114s ]
+[ sql ] [ SQL ] INSERT INTO `hs_map` (`address` , `ctime` , `rtime` , `remark`) VALUES ('东方名筑' , '2018-03-24 14:09:57' , '2018-03-14 08:08:16.0' , '') [ RunTime:0.000108s ]
+[ sql ] [ SQL ] UPDATE `hs_map`  SET `paixu`=22  WHERE  (  id = 22 ) [ RunTime:0.000107s ]
+---------------------------------------------------------------
+[ 2018-03-24T14:09:58+08:00 ] 116.235.34.20 GET /hanshou/public/Hanshou/map/map2.html
+[ info ] www.hanshoushou.com/hanshou/public/Hanshou/map/map2.html [运行时间：0.055183s][吞吐率：18.12req/s] [内存消耗：5,701.74kb] [文件加载：90]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000037s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001814s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Hanshou',
+    1 => 'map',
+    2 => 'map2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.hanshoushou.com/hanshou/public/Hanshou/map/excelpost.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; Hm_lvt_e0781425189b1daba20daf3c69d85915=1521120098; PHPSESSID=gv7ovi5vq85ls1amgpp554ojc1; antispame=1521878997; antispamkey=2a888ffbfc1a06570f0008f9678aaac4',
+  'kerid' => '11644',
+  'via' => '1.1 hkg4.hk.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'hkg4.hk.smartgslb.com="Surrogate/1.0"',
+  'x-forwarded-for' => '116.235.34.20, 127.0.0.1',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000422s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\hanshou\controller\Map->map2[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Map.php ]
+[ info ] [ VIEW ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/public/../application/hanshou/view/map/map2.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'need_wait',
+  4 => 'is_login',
+  5 => 'date2',
+  6 => 'date1',
+  7 => 'map_address',
+  8 => 'json_arr',
+  9 => 'arr',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000243s ] mysql:host=localhost;port=3306;dbname=sql_hanshoushou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_mywords` [ RunTime:0.002127s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` [ RunTime:0.000141s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '阿韩' and is_read != 1 ) LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '韩宇佳' and is_read != 1 ) LIMIT 1 [ RunTime:0.000097s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'Ahan' and is_read != 1 ) LIMIT 1 [ RunTime:0.000098s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'katja' and is_read != 1 ) LIMIT 1 [ RunTime:0.000081s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_map` [ RunTime:0.001311s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hs_map` WHERE  (  1=1 ) LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_map` WHERE  (  1=1 ) ORDER BY id DESC LIMIT 0,10 [ RunTime:0.000114s ]
+---------------------------------------------------------------
+[ 2018-03-24T14:10:02+08:00 ] 116.235.34.20 POST /hanshou/public/hanshou/map/update_xy.html
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/map/update_xy.html [运行时间：0.047905s][吞吐率：20.87req/s] [内存消耗：5,447.26kb] [文件加载：85]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000024s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002179s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'map',
+    2 => 'update_xy',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'content-length' => '37',
+  'accept' => '*/*',
+  'origin' => 'http://www.hanshoushou.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.hanshoushou.com/hanshou/public/Hanshou/map/map2.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; Hm_lvt_e0781425189b1daba20daf3c69d85915=1521120098; PHPSESSID=gv7ovi5vq85ls1amgpp554ojc1; antispame=1521878998; antispamkey=683ef75bc742e4256f8e7269b7097d1a',
+  'kerid' => '11644',
+  'via' => '1.1 hkg4.hk.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'hkg4.hk.smartgslb.com="Surrogate/1.0"',
+  'x-forwarded-for' => '116.235.34.20, 127.0.0.1',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'x' => '119.30347',
+  'y' => '26.080429',
+  'id' => '',
+  'is_city' => '1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000412s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\hanshou\controller\Map->update_xy[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Map.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000280s ] mysql:host=localhost;port=3306;dbname=sql_hanshoushou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_mywords` [ RunTime:0.002201s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` [ RunTime:0.000131s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '阿韩' and is_read != 1 ) LIMIT 1 [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '韩宇佳' and is_read != 1 ) LIMIT 1 [ RunTime:0.000115s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'Ahan' and is_read != 1 ) LIMIT 1 [ RunTime:0.000090s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'katja' and is_read != 1 ) LIMIT 1 [ RunTime:0.000076s ]
+---------------------------------------------------------------
+[ 2018-03-24T14:10:12+08:00 ] 116.235.34.20 POST /hanshou/public/hanshou/map/update_xy.html
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/map/update_xy.html [运行时间：0.049442s][吞吐率：20.23req/s] [内存消耗：5,455.42kb] [文件加载：85]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000026s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001545s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'map',
+    2 => 'update_xy',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'content-length' => '40',
+  'accept' => '*/*',
+  'origin' => 'http://www.hanshoushou.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.hanshoushou.com/hanshou/public/Hanshou/map/map2.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; Hm_lvt_e0781425189b1daba20daf3c69d85915=1521120098; PHPSESSID=gv7ovi5vq85ls1amgpp554ojc1; antispame=1521879002; antispamkey=1655eb43ccfbad084d23aca6c492dbe5',
+  'kerid' => '11644',
+  'via' => '1.1 hkg4.hk.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'hkg4.hk.smartgslb.com="Surrogate/1.0"',
+  'x-forwarded-for' => '116.235.34.20, 127.0.0.1',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'x' => '121.903312',
+  'y' => '30.889079',
+  'id' => '21',
+  'is_city' => '0',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000366s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\hanshou\controller\Map->update_xy[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Map.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000277s ] mysql:host=localhost;port=3306;dbname=sql_hanshoushou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_mywords` [ RunTime:0.002148s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` [ RunTime:0.000155s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '阿韩' and is_read != 1 ) LIMIT 1 [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '韩宇佳' and is_read != 1 ) LIMIT 1 [ RunTime:0.000089s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'Ahan' and is_read != 1 ) LIMIT 1 [ RunTime:0.000092s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'katja' and is_read != 1 ) LIMIT 1 [ RunTime:0.000081s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_map` [ RunTime:0.001349s ]
+[ sql ] [ SQL ] UPDATE `hs_map`  SET `x`='121.903312',`y`='30.889079'  WHERE  `id` = 21 [ RunTime:0.000171s ]
+---------------------------------------------------------------
+[ 2018-03-24T14:11:01+08:00 ] 116.235.34.20 POST /hanshou/public/hanshou/map/update_xy.html
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/map/update_xy.html [运行时间：0.049173s][吞吐率：20.34req/s] [内存消耗：5,455.42kb] [文件加载：85]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000036s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001497s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'map',
+    2 => 'update_xy',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'content-length' => '40',
+  'accept' => '*/*',
+  'origin' => 'http://www.hanshoushou.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.hanshoushou.com/hanshou/public/Hanshou/map/map2.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; Hm_lvt_e0781425189b1daba20daf3c69d85915=1521120098; PHPSESSID=gv7ovi5vq85ls1amgpp554ojc1; antispame=1521879023; antispamkey=09f071a1e42015eb498de4f4b9df0bcf',
+  'kerid' => '11644',
+  'via' => '1.1 hkg4.hk.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'hkg4.hk.smartgslb.com="Surrogate/1.0"',
+  'x-forwarded-for' => '116.235.34.20, 127.0.0.1',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'x' => '121.525985',
+  'y' => '31.205729',
+  'id' => '22',
+  'is_city' => '0',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000355s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\hanshou\controller\Map->update_xy[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Map.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000320s ] mysql:host=localhost;port=3306;dbname=sql_hanshoushou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_mywords` [ RunTime:0.002144s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` [ RunTime:0.000172s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '阿韩' and is_read != 1 ) LIMIT 1 [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '韩宇佳' and is_read != 1 ) LIMIT 1 [ RunTime:0.000094s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'Ahan' and is_read != 1 ) LIMIT 1 [ RunTime:0.000088s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'katja' and is_read != 1 ) LIMIT 1 [ RunTime:0.000077s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_map` [ RunTime:0.001409s ]
+[ sql ] [ SQL ] UPDATE `hs_map`  SET `x`='121.525985',`y`='31.205729'  WHERE  `id` = 22 [ RunTime:0.000150s ]
+---------------------------------------------------------------
+[ 2018-03-24T14:11:15+08:00 ] 116.235.34.20 GET /hanshou/public/hanshou/map/map.html
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/map/map.html [运行时间：0.062031s][吞吐率：16.12req/s] [内存消耗：5,667.56kb] [文件加载：88]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000035s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001481s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'map',
+    2 => 'map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.hanshoushou.com/hanshou/public/Hanshou/map/map2.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; Hm_lvt_e0781425189b1daba20daf3c69d85915=1521120098; PHPSESSID=gv7ovi5vq85ls1amgpp554ojc1; antispame=1521879060; antispamkey=aa3404d4e28f6bbe656a562872e6e421',
+  'kerid' => '11644',
+  'via' => '1.1 hkg4.hk.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'hkg4.hk.smartgslb.com="Surrogate/1.0"',
+  'x-forwarded-for' => '116.235.34.20, 127.0.0.1',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000359s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\hanshou\controller\Map->map[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Map.php ]
+[ info ] [ VIEW ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/public/../application/hanshou/view/map/map.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'need_wait',
+  4 => 'is_login',
+  5 => 'arr_m',
+  6 => 'arr_r',
+  7 => 'arr_x',
+  8 => 'arr_y',
+  9 => 'arr_a',
+  10 => 'city_x',
+  11 => 'city_y',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000274s ] mysql:host=localhost;port=3306;dbname=sql_hanshoushou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_mywords` [ RunTime:0.004156s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` [ RunTime:0.000219s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '阿韩' and is_read != 1 ) LIMIT 1 [ RunTime:0.000136s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '韩宇佳' and is_read != 1 ) LIMIT 1 [ RunTime:0.000141s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'Ahan' and is_read != 1 ) LIMIT 1 [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'katja' and is_read != 1 ) LIMIT 1 [ RunTime:0.000100s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_map` [ RunTime:0.004735s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_map` WHERE  (  1=1 ) ORDER BY id DESC [ RunTime:0.000195s ]
+---------------------------------------------------------------
+[ 2018-03-24T15:29:56+08:00 ] 118.116.127.196 GET /hanshou/public/hanshou/index/index.html
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/index/index.html [运行时间：0.053730s][吞吐率：18.61req/s] [内存消耗：5,099.05kb] [文件加载：81]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000056s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005386s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'antispame=1521883795; antispamkey=ed9975e1c3c92474cc11811b7831795c',
+  'kerid' => '11644',
+  'via' => '1.1 hkg4.hk.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'hkg4.hk.smartgslb.com="Surrogate/1.0"',
+  'x-forwarded-for' => '118.116.127.196, 127.0.0.1',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000407s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\hanshou\controller\Index->index[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Index.php ]
+[ info ] [ VIEW ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/public/../application/hanshou/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'need_wait',
+  4 => 'is_login',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000255s ] mysql:host=localhost;port=3306;dbname=sql_hanshoushou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_mywords` [ RunTime:0.002285s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` [ RunTime:0.000216s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '阿韩' and is_read != 1 ) LIMIT 1 [ RunTime:0.000138s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '韩宇佳' and is_read != 1 ) LIMIT 1 [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'Ahan' and is_read != 1 ) LIMIT 1 [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'katja' and is_read != 1 ) LIMIT 1 [ RunTime:0.000119s ]
+---------------------------------------------------------------
+[ 2018-03-24T17:19:29+08:00 ] 116.235.34.20 GET /hanshou/public/hanshou/map/map2.html
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/map/map2.html [运行时间：0.069958s][吞吐率：14.29req/s] [内存消耗：5,923.33kb] [文件加载：92]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000054s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001711s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'map',
+    2 => 'map2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.hanshoushou.com/hanshou/public/hanshou/map/map.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; Hm_lvt_e0781425189b1daba20daf3c69d85915=1521120098; PHPSESSID=gv7ovi5vq85ls1amgpp554ojc1; antispame=1521879076; antispamkey=586b8459059af71f23aa4e2ccc2b51c3',
+  'kerid' => '11644',
+  'via' => '1.1 hkg4.hk.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'hkg4.hk.smartgslb.com="Surrogate/1.0"',
+  'x-forwarded-for' => '116.235.34.20, 127.0.0.1',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000398s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\hanshou\controller\Map->map2[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Map.php ]
+[ info ] [ VIEW ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/public/../application/hanshou/view/map/map2.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'need_wait',
+  4 => 'is_login',
+  5 => 'date2',
+  6 => 'date1',
+  7 => 'map_address',
+  8 => 'json_arr',
+  9 => 'arr',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000174s ] mysql:host=localhost;port=3306;dbname=sql_hanshoushou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_mywords` [ RunTime:0.002288s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` [ RunTime:0.000208s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '阿韩' and is_read != 1 ) LIMIT 1 [ RunTime:0.000148s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '韩宇佳' and is_read != 1 ) LIMIT 1 [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'Ahan' and is_read != 1 ) LIMIT 1 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'katja' and is_read != 1 ) LIMIT 1 [ RunTime:0.000115s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_map` [ RunTime:0.002253s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hs_map` WHERE  (  1=1 ) LIMIT 1 [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_map` WHERE  (  1=1 ) ORDER BY id DESC LIMIT 0,10 [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_map` WHERE  (  1=1 ) ORDER BY id DESC [ RunTime:0.000210s ]
+---------------------------------------------------------------
+[ 2018-03-24T17:19:39+08:00 ] 116.235.34.20 POST /hanshou/public/hanshou/map/update_xy.html
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/map/update_xy.html [运行时间：0.054350s][吞吐率：18.40req/s] [内存消耗：5,455.60kb] [文件加载：85]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000038s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001627s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'map',
+    2 => 'update_xy',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'content-length' => '40',
+  'accept' => '*/*',
+  'origin' => 'http://www.hanshoushou.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.hanshoushou.com/hanshou/public/hanshou/map/map2.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; Hm_lvt_e0781425189b1daba20daf3c69d85915=1521120098; PHPSESSID=gv7ovi5vq85ls1amgpp554ojc1; antispame=1521890370; antispamkey=06bea2642f1cd2ecc2e0803569d7ded2',
+  'kerid' => '11644',
+  'via' => '1.1 hkg4.hk.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'hkg4.hk.smartgslb.com="Surrogate/1.0"',
+  'x-forwarded-for' => '116.235.34.20, 127.0.0.1',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'x' => '121.903312',
+  'y' => '30.889079',
+  'id' => '21',
+  'is_city' => '0',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000380s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\hanshou\controller\Map->update_xy[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Map.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000255s ] mysql:host=localhost;port=3306;dbname=sql_hanshoushou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_mywords` [ RunTime:0.003490s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` [ RunTime:0.000149s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '阿韩' and is_read != 1 ) LIMIT 1 [ RunTime:0.000143s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '韩宇佳' and is_read != 1 ) LIMIT 1 [ RunTime:0.000129s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'Ahan' and is_read != 1 ) LIMIT 1 [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'katja' and is_read != 1 ) LIMIT 1 [ RunTime:0.000126s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_map` [ RunTime:0.001702s ]
+[ sql ] [ SQL ] UPDATE `hs_map`  SET `x`='121.903312',`y`='30.889079'  WHERE  `id` = 21 [ RunTime:0.000167s ]
+---------------------------------------------------------------
+[ 2018-03-24T17:19:58+08:00 ] 116.235.34.20 GET /hanshou/public/hanshou/map/map2.html
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/map/map2.html [运行时间：0.056637s][吞吐率：17.66req/s] [内存消耗：5,702.23kb] [文件加载：90]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000038s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001500s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'map',
+    2 => 'map2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.hanshoushou.com/hanshou/public/hanshou/map/map2.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; Hm_lvt_e0781425189b1daba20daf3c69d85915=1521120098; PHPSESSID=gv7ovi5vq85ls1amgpp554ojc1; antispame=1521890390; antispamkey=bb5e997e203105a569dc8f812fa6970e',
+  'kerid' => '11644',
+  'via' => '1.1 hkg4.hk.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'hkg4.hk.smartgslb.com="Surrogate/1.0"',
+  'x-forwarded-for' => '116.235.34.20, 127.0.0.1',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000357s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\hanshou\controller\Map->map2[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Map.php ]
+[ info ] [ VIEW ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/public/../application/hanshou/view/map/map2.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'need_wait',
+  4 => 'is_login',
+  5 => 'date2',
+  6 => 'date1',
+  7 => 'map_address',
+  8 => 'json_arr',
+  9 => 'arr',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000242s ] mysql:host=localhost;port=3306;dbname=sql_hanshoushou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_mywords` [ RunTime:0.004508s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` [ RunTime:0.000155s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '阿韩' and is_read != 1 ) LIMIT 1 [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '韩宇佳' and is_read != 1 ) LIMIT 1 [ RunTime:0.000082s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'Ahan' and is_read != 1 ) LIMIT 1 [ RunTime:0.000077s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'katja' and is_read != 1 ) LIMIT 1 [ RunTime:0.000080s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_map` [ RunTime:0.001618s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hs_map` WHERE  (  1=1 ) LIMIT 1 [ RunTime:0.000099s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_map` WHERE  (  1=1 ) ORDER BY id DESC LIMIT 0,10 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_map` WHERE  (  1=1 ) ORDER BY id DESC [ RunTime:0.000128s ]
+---------------------------------------------------------------
+[ 2018-03-24T17:20:00+08:00 ] 116.235.34.20 GET /hanshou/public/hanshou/map/map.html
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/map/map.html [运行时间：0.055502s][吞吐率：18.02req/s] [内存消耗：5,465.68kb] [文件加载：86]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000043s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001650s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'map',
+    2 => 'map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.hanshoushou.com/hanshou/public/hanshou/map/map2.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; Hm_lvt_e0781425189b1daba20daf3c69d85915=1521120098; PHPSESSID=gv7ovi5vq85ls1amgpp554ojc1; antispame=1521890398; antispamkey=abb7b9c05d6bc1d23dcd8a3dd55b18e4',
+  'kerid' => '11644',
+  'via' => '1.1 hkg4.hk.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'hkg4.hk.smartgslb.com="Surrogate/1.0"',
+  'x-forwarded-for' => '116.235.34.20, 127.0.0.1',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000480s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\hanshou\controller\Map->map[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Map.php ]
+[ info ] [ VIEW ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/public/../application/hanshou/view/map/map.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'need_wait',
+  4 => 'is_login',
+  5 => 'arr_m',
+  6 => 'arr_r',
+  7 => 'arr_x',
+  8 => 'arr_y',
+  9 => 'arr_a',
+  10 => 'city_x',
+  11 => 'city_y',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000239s ] mysql:host=localhost;port=3306;dbname=sql_hanshoushou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_mywords` [ RunTime:0.002460s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` [ RunTime:0.000152s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '阿韩' and is_read != 1 ) LIMIT 1 [ RunTime:0.000141s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '韩宇佳' and is_read != 1 ) LIMIT 1 [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'Ahan' and is_read != 1 ) LIMIT 1 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'katja' and is_read != 1 ) LIMIT 1 [ RunTime:0.000115s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_map` [ RunTime:0.001395s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_map` WHERE  (  1=1 ) ORDER BY id DESC [ RunTime:0.000150s ]
+---------------------------------------------------------------
+[ 2018-03-24T17:20:02+08:00 ] 116.235.34.20 GET /hanshou/public/hanshou/map/map2.html
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/map/map2.html [运行时间：0.065465s][吞吐率：15.28req/s] [内存消耗：5,702.23kb] [文件加载：90]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000039s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001664s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'map',
+    2 => 'map2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.hanshoushou.com/hanshou/public/hanshou/map/map.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; Hm_lvt_e0781425189b1daba20daf3c69d85915=1521120098; PHPSESSID=gv7ovi5vq85ls1amgpp554ojc1; antispame=1521890400; antispamkey=0a7ad6134e8edc1909bad08c56df4a87',
+  'kerid' => '11644',
+  'via' => '1.1 hkg4.hk.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'hkg4.hk.smartgslb.com="Surrogate/1.0"',
+  'x-forwarded-for' => '116.235.34.20, 127.0.0.1',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000620s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\hanshou\controller\Map->map2[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Map.php ]
+[ info ] [ VIEW ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/public/../application/hanshou/view/map/map2.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'need_wait',
+  4 => 'is_login',
+  5 => 'date2',
+  6 => 'date1',
+  7 => 'map_address',
+  8 => 'json_arr',
+  9 => 'arr',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000218s ] mysql:host=localhost;port=3306;dbname=sql_hanshoushou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_mywords` [ RunTime:0.002189s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '阿韩' and is_read != 1 ) LIMIT 1 [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '韩宇佳' and is_read != 1 ) LIMIT 1 [ RunTime:0.000084s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'Ahan' and is_read != 1 ) LIMIT 1 [ RunTime:0.000091s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'katja' and is_read != 1 ) LIMIT 1 [ RunTime:0.000079s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_map` [ RunTime:0.001404s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hs_map` WHERE  (  1=1 ) LIMIT 1 [ RunTime:0.000080s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_map` WHERE  (  1=1 ) ORDER BY id DESC LIMIT 0,10 [ RunTime:0.000140s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_map` WHERE  (  1=1 ) ORDER BY id DESC [ RunTime:0.000114s ]
+---------------------------------------------------------------
+[ 2018-03-24T17:20:04+08:00 ] 116.235.34.20 POST /hanshou/public/hanshou/map/update_xy.html
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/map/update_xy.html [运行时间：0.053545s][吞吐率：18.68req/s] [内存消耗：5,448.30kb] [文件加载：85]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000034s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001654s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'map',
+    2 => 'update_xy',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'content-length' => '37',
+  'accept' => '*/*',
+  'origin' => 'http://www.hanshoushou.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.hanshoushou.com/hanshou/public/hanshou/map/map2.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; Hm_lvt_e0781425189b1daba20daf3c69d85915=1521120098; PHPSESSID=gv7ovi5vq85ls1amgpp554ojc1; antispame=1521890402; antispamkey=d4fc3a3d4983b383b9c2f2bc71530f40',
+  'kerid' => '11644',
+  'via' => '1.1 hkg4.hk.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'hkg4.hk.smartgslb.com="Surrogate/1.0"',
+  'x-forwarded-for' => '116.235.34.20, 127.0.0.1',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'x' => '119.30347',
+  'y' => '26.080429',
+  'id' => '',
+  'is_city' => '1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000412s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\hanshou\controller\Map->update_xy[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Map.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000245s ] mysql:host=localhost;port=3306;dbname=sql_hanshoushou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_mywords` [ RunTime:0.004453s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` [ RunTime:0.000165s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '阿韩' and is_read != 1 ) LIMIT 1 [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '韩宇佳' and is_read != 1 ) LIMIT 1 [ RunTime:0.000142s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'Ahan' and is_read != 1 ) LIMIT 1 [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'katja' and is_read != 1 ) LIMIT 1 [ RunTime:0.000128s ]
+---------------------------------------------------------------
+[ 2018-03-24T17:20:06+08:00 ] 116.235.34.20 POST /hanshou/public/hanshou/map/update_xy.html
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/map/update_xy.html [运行时间：0.054431s][吞吐率：18.37req/s] [内存消耗：5,456.35kb] [文件加载：85]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000033s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001860s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'map',
+    2 => 'update_xy',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'content-length' => '40',
+  'accept' => '*/*',
+  'origin' => 'http://www.hanshoushou.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.hanshoushou.com/hanshou/public/hanshou/map/map2.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; Hm_lvt_e0781425189b1daba20daf3c69d85915=1521120098; PHPSESSID=gv7ovi5vq85ls1amgpp554ojc1; antispame=1521890404; antispamkey=dbea44e2f8d7e90791df91630ede29c6',
+  'kerid' => '11644',
+  'via' => '1.1 hkg4.hk.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'hkg4.hk.smartgslb.com="Surrogate/1.0"',
+  'x-forwarded-for' => '116.235.34.20, 127.0.0.1',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'x' => '119.308011',
+  'y' => '26.055602',
+  'id' => '17',
+  'is_city' => '0',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000428s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\hanshou\controller\Map->update_xy[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Map.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000200s ] mysql:host=localhost;port=3306;dbname=sql_hanshoushou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_mywords` [ RunTime:0.002122s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` [ RunTime:0.000140s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '阿韩' and is_read != 1 ) LIMIT 1 [ RunTime:0.000130s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '韩宇佳' and is_read != 1 ) LIMIT 1 [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'Ahan' and is_read != 1 ) LIMIT 1 [ RunTime:0.000115s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'katja' and is_read != 1 ) LIMIT 1 [ RunTime:0.000120s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_map` [ RunTime:0.001560s ]
+[ sql ] [ SQL ] UPDATE `hs_map`  SET `x`='119.308011',`y`='26.055602'  WHERE  `id` = 17 [ RunTime:0.000183s ]
+---------------------------------------------------------------
+[ 2018-03-24T17:20:07+08:00 ] 116.235.34.20 POST /hanshou/public/hanshou/map/update_xy.html
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/map/update_xy.html [运行时间：0.056259s][吞吐率：17.77req/s] [内存消耗：5,456.35kb] [文件加载：85]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000034s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001595s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'map',
+    2 => 'update_xy',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'content-length' => '40',
+  'accept' => '*/*',
+  'origin' => 'http://www.hanshoushou.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.hanshoushou.com/hanshou/public/hanshou/map/map2.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; Hm_lvt_e0781425189b1daba20daf3c69d85915=1521120098; PHPSESSID=gv7ovi5vq85ls1amgpp554ojc1; antispame=1521890406; antispamkey=8060b7cc48e1ad7dadff5c244193aa03',
+  'kerid' => '11644',
+  'via' => '1.1 hkg4.hk.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'hkg4.hk.smartgslb.com="Surrogate/1.0"',
+  'x-forwarded-for' => '116.235.34.20, 127.0.0.1',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'x' => '119.308011',
+  'y' => '26.055602',
+  'id' => '18',
+  'is_city' => '0',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000429s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\hanshou\controller\Map->update_xy[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Map.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000262s ] mysql:host=localhost;port=3306;dbname=sql_hanshoushou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_mywords` [ RunTime:0.002304s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` [ RunTime:0.000153s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '阿韩' and is_read != 1 ) LIMIT 1 [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '韩宇佳' and is_read != 1 ) LIMIT 1 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'Ahan' and is_read != 1 ) LIMIT 1 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'katja' and is_read != 1 ) LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_map` [ RunTime:0.002138s ]
+[ sql ] [ SQL ] UPDATE `hs_map`  SET `x`='119.308011',`y`='26.055602'  WHERE  `id` = 18 [ RunTime:0.000157s ]
+---------------------------------------------------------------
+[ 2018-03-24T17:20:08+08:00 ] 116.235.34.20 POST /hanshou/public/hanshou/map/update_xy.html
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/map/update_xy.html [运行时间：0.055588s][吞吐率：17.99req/s] [内存消耗：5,456.38kb] [文件加载：85]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000039s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001645s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'map',
+    2 => 'update_xy',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'content-length' => '40',
+  'accept' => '*/*',
+  'origin' => 'http://www.hanshoushou.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.hanshoushou.com/hanshou/public/hanshou/map/map2.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; Hm_lvt_e0781425189b1daba20daf3c69d85915=1521120098; PHPSESSID=gv7ovi5vq85ls1amgpp554ojc1; antispame=1521890407; antispamkey=c23677ae685315d56bef21743ee1231f',
+  'kerid' => '11644',
+  'via' => '1.1 hkg4.hk.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'hkg4.hk.smartgslb.com="Surrogate/1.0"',
+  'x-forwarded-for' => '116.235.34.20, 127.0.0.1',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'x' => '119.315553',
+  'y' => '26.054109',
+  'id' => '19',
+  'is_city' => '0',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000391s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\hanshou\controller\Map->update_xy[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Map.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000285s ] mysql:host=localhost;port=3306;dbname=sql_hanshoushou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_mywords` [ RunTime:0.004559s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '阿韩' and is_read != 1 ) LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '韩宇佳' and is_read != 1 ) LIMIT 1 [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'Ahan' and is_read != 1 ) LIMIT 1 [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'katja' and is_read != 1 ) LIMIT 1 [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_map` [ RunTime:0.002682s ]
+[ sql ] [ SQL ] UPDATE `hs_map`  SET `x`='119.315553',`y`='26.054109'  WHERE  `id` = 19 [ RunTime:0.000176s ]
+---------------------------------------------------------------
+[ 2018-03-24T17:20:09+08:00 ] 116.235.34.20 POST /hanshou/public/hanshou/map/update_xy.html
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/map/update_xy.html [运行时间：0.051236s][吞吐率：19.52req/s] [内存消耗：5,456.38kb] [文件加载：85]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000040s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001569s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'map',
+    2 => 'update_xy',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'content-length' => '40',
+  'accept' => '*/*',
+  'origin' => 'http://www.hanshoushou.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.hanshoushou.com/hanshou/public/hanshou/map/map2.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; Hm_lvt_e0781425189b1daba20daf3c69d85915=1521120098; PHPSESSID=gv7ovi5vq85ls1amgpp554ojc1; antispame=1521890408; antispamkey=aeec6f546f363a6c8c58465abe620fc2',
+  'kerid' => '11644',
+  'via' => '1.1 hkg4.hk.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'hkg4.hk.smartgslb.com="Surrogate/1.0"',
+  'x-forwarded-for' => '116.235.34.20, 127.0.0.1',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'x' => '119.315553',
+  'y' => '26.054109',
+  'id' => '20',
+  'is_city' => '0',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000369s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\hanshou\controller\Map->update_xy[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Map.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000242s ] mysql:host=localhost;port=3306;dbname=sql_hanshoushou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_mywords` [ RunTime:0.002147s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` [ RunTime:0.000152s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '阿韩' and is_read != 1 ) LIMIT 1 [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '韩宇佳' and is_read != 1 ) LIMIT 1 [ RunTime:0.000078s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'Ahan' and is_read != 1 ) LIMIT 1 [ RunTime:0.000077s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'katja' and is_read != 1 ) LIMIT 1 [ RunTime:0.000083s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_map` [ RunTime:0.001294s ]
+[ sql ] [ SQL ] UPDATE `hs_map`  SET `x`='119.315553',`y`='26.054109'  WHERE  `id` = 20 [ RunTime:0.000163s ]
+---------------------------------------------------------------
+[ 2018-03-24T17:20:11+08:00 ] 116.235.34.20 GET /hanshou/public/hanshou/map/map2.html
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/map/map2.html [运行时间：0.057924s][吞吐率：17.26req/s] [内存消耗：5,703.55kb] [文件加载：90]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000050s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001576s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'map',
+    2 => 'map2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.hanshoushou.com/hanshou/public/hanshou/map/map2.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; Hm_lvt_e0781425189b1daba20daf3c69d85915=1521120098; PHPSESSID=gv7ovi5vq85ls1amgpp554ojc1; antispame=1521890409; antispamkey=0c43b9eee402300f1c62aaad7ac01f7a',
+  'kerid' => '11644',
+  'via' => '1.1 hkg4.hk.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'hkg4.hk.smartgslb.com="Surrogate/1.0"',
+  'x-forwarded-for' => '116.235.34.20, 127.0.0.1',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000491s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\hanshou\controller\Map->map2[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Map.php ]
+[ info ] [ VIEW ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/public/../application/hanshou/view/map/map2.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'need_wait',
+  4 => 'is_login',
+  5 => 'date2',
+  6 => 'date1',
+  7 => 'map_address',
+  8 => 'json_arr',
+  9 => 'arr',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000234s ] mysql:host=localhost;port=3306;dbname=sql_hanshoushou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_mywords` [ RunTime:0.002792s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '阿韩' and is_read != 1 ) LIMIT 1 [ RunTime:0.000139s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '韩宇佳' and is_read != 1 ) LIMIT 1 [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'Ahan' and is_read != 1 ) LIMIT 1 [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'katja' and is_read != 1 ) LIMIT 1 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_map` [ RunTime:0.002458s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hs_map` WHERE  (  1=1 ) LIMIT 1 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_map` WHERE  (  1=1 ) ORDER BY id DESC LIMIT 0,10 [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_map` WHERE  (  1=1 ) ORDER BY id DESC [ RunTime:0.000147s ]
+---------------------------------------------------------------
+[ 2018-03-24T17:20:13+08:00 ] 116.235.34.20 GET /hanshou/public/hanshou/map/map.html
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/map/map.html [运行时间：0.055979s][吞吐率：17.86req/s] [内存消耗：5,466.72kb] [文件加载：86]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000039s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001629s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'map',
+    2 => 'map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.hanshoushou.com/hanshou/public/hanshou/map/map2.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; Hm_lvt_e0781425189b1daba20daf3c69d85915=1521120098; PHPSESSID=gv7ovi5vq85ls1amgpp554ojc1; antispame=1521890411; antispamkey=172e2ac4318f91f0ef6921091f8d0175',
+  'kerid' => '11644',
+  'via' => '1.1 hkg4.hk.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'hkg4.hk.smartgslb.com="Surrogate/1.0"',
+  'x-forwarded-for' => '116.235.34.20, 127.0.0.1',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000413s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\hanshou\controller\Map->map[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Map.php ]
+[ info ] [ VIEW ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/public/../application/hanshou/view/map/map.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'need_wait',
+  4 => 'is_login',
+  5 => 'arr_m',
+  6 => 'arr_r',
+  7 => 'arr_x',
+  8 => 'arr_y',
+  9 => 'arr_a',
+  10 => 'city_x',
+  11 => 'city_y',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000223s ] mysql:host=localhost;port=3306;dbname=sql_hanshoushou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_mywords` [ RunTime:0.002375s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '阿韩' and is_read != 1 ) LIMIT 1 [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '韩宇佳' and is_read != 1 ) LIMIT 1 [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'Ahan' and is_read != 1 ) LIMIT 1 [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'katja' and is_read != 1 ) LIMIT 1 [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_map` [ RunTime:0.001372s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_map` WHERE  (  1=1 ) ORDER BY id DESC [ RunTime:0.000149s ]
+---------------------------------------------------------------
+[ 2018-03-24T17:20:35+08:00 ] 116.235.34.20 GET /hanshou/public/hanshou/map/dao.html
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/map/dao.html [运行时间：0.061571s][吞吐率：16.24req/s] [内存消耗：5,450.99kb] [文件加载：86]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000045s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001593s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'map',
+    2 => 'dao',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.hanshoushou.com/hanshou/public/hanshou/map/map.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; Hm_lvt_e0781425189b1daba20daf3c69d85915=1521120098; PHPSESSID=gv7ovi5vq85ls1amgpp554ojc1; antispame=1521890413; antispamkey=8045ac004fe449c3a65cfde057b2affd',
+  'kerid' => '11644',
+  'via' => '1.1 hkg4.hk.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'hkg4.hk.smartgslb.com="Surrogate/1.0"',
+  'x-forwarded-for' => '116.235.34.20, 127.0.0.1',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000393s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\hanshou\controller\Map->dao[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Map.php ]
+[ info ] [ VIEW ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/public/../application/hanshou/view/map/dao.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'need_wait',
+  4 => 'is_login',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000242s ] mysql:host=localhost;port=3306;dbname=sql_hanshoushou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_mywords` [ RunTime:0.005108s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` [ RunTime:0.000185s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '阿韩' and is_read != 1 ) LIMIT 1 [ RunTime:0.000206s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '韩宇佳' and is_read != 1 ) LIMIT 1 [ RunTime:0.000181s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'Ahan' and is_read != 1 ) LIMIT 1 [ RunTime:0.000183s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'katja' and is_read != 1 ) LIMIT 1 [ RunTime:0.000197s ]
+---------------------------------------------------------------
+[ 2018-03-24T19:33:34+08:00 ] 116.235.34.20 GET /hanshou/public/hanshou/map/map2.html
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/map/map2.html [运行时间：0.058634s][吞吐率：17.05req/s] [内存消耗：5,702.88kb] [文件加载：90]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000041s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001615s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'map',
+    2 => 'map2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.hanshoushou.com/hanshou/public/hanshou/map/dao.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; Hm_lvt_e0781425189b1daba20daf3c69d85915=1521120098; PHPSESSID=gv7ovi5vq85ls1amgpp554ojc1; antispame=1521890436; antispamkey=d0dd467fff60a0ff9949143e2dd90468',
+  'kerid' => '11644',
+  'via' => '1.1 hkg4.hk.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'hkg4.hk.smartgslb.com="Surrogate/1.0"',
+  'x-forwarded-for' => '116.235.34.20, 127.0.0.1',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000387s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\hanshou\controller\Map->map2[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Map.php ]
+[ info ] [ VIEW ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/public/../application/hanshou/view/map/map2.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'need_wait',
+  4 => 'is_login',
+  5 => 'date2',
+  6 => 'date1',
+  7 => 'map_address',
+  8 => 'json_arr',
+  9 => 'arr',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000219s ] mysql:host=localhost;port=3306;dbname=sql_hanshoushou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_mywords` [ RunTime:0.002808s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '阿韩' and is_read != 1 ) LIMIT 1 [ RunTime:0.000137s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '韩宇佳' and is_read != 1 ) LIMIT 1 [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'Ahan' and is_read != 1 ) LIMIT 1 [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'katja' and is_read != 1 ) LIMIT 1 [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_map` [ RunTime:0.001779s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hs_map` WHERE  (  1=1 ) LIMIT 1 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_map` WHERE  (  1=1 ) ORDER BY id DESC LIMIT 0,10 [ RunTime:0.000146s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_map` WHERE  (  1=1 ) ORDER BY id DESC [ RunTime:0.000142s ]
+---------------------------------------------------------------
+[ 2018-03-24T19:33:44+08:00 ] 116.235.34.20 POST /hanshou/public/hanshou/map/update_xy.html
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/map/update_xy.html [运行时间：0.065159s][吞吐率：15.35req/s] [内存消耗：5,455.60kb] [文件加载：85]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000040s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001947s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'map',
+    2 => 'update_xy',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'content-length' => '40',
+  'accept' => '*/*',
+  'origin' => 'http://www.hanshoushou.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.hanshoushou.com/hanshou/public/hanshou/map/map2.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; Hm_lvt_e0781425189b1daba20daf3c69d85915=1521120098; PHPSESSID=gv7ovi5vq85ls1amgpp554ojc1; antispame=1521898415; antispamkey=a496bcf889a71f6be76ce296a47c01f7',
+  'kerid' => '11644',
+  'via' => '1.1 hkg4.hk.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'hkg4.hk.smartgslb.com="Surrogate/1.0"',
+  'x-forwarded-for' => '116.235.34.20, 127.0.0.1',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'x' => '121.903312',
+  'y' => '30.889079',
+  'id' => '21',
+  'is_city' => '0',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000450s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\hanshou\controller\Map->update_xy[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Map.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000223s ] mysql:host=localhost;port=3306;dbname=sql_hanshoushou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_mywords` [ RunTime:0.004618s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` [ RunTime:0.000232s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '阿韩' and is_read != 1 ) LIMIT 1 [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '韩宇佳' and is_read != 1 ) LIMIT 1 [ RunTime:0.000130s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'Ahan' and is_read != 1 ) LIMIT 1 [ RunTime:0.000124s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'katja' and is_read != 1 ) LIMIT 1 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_map` [ RunTime:0.004180s ]
+[ sql ] [ SQL ] UPDATE `hs_map`  SET `x`='121.903312',`y`='30.889079'  WHERE  `id` = 21 [ RunTime:0.000202s ]
+---------------------------------------------------------------
+[ 2018-03-24T19:34:06+08:00 ] 116.235.34.20 GET /hanshou/public/hanshou/map/map.html
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/map/map.html [运行时间：0.052627s][吞吐率：19.00req/s] [内存消耗：5,466.10kb] [文件加载：86]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000039s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001591s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'map',
+    2 => 'map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.hanshoushou.com/hanshou/public/hanshou/map/map2.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; Hm_lvt_e0781425189b1daba20daf3c69d85915=1521120098; PHPSESSID=gv7ovi5vq85ls1amgpp554ojc1; antispame=1521898436; antispamkey=48353d02f7002f7bf8418f1516b91bff',
+  'kerid' => '11644',
+  'via' => '1.1 hkg4.hk.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'hkg4.hk.smartgslb.com="Surrogate/1.0"',
+  'x-forwarded-for' => '116.235.34.20, 127.0.0.1',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000369s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\hanshou\controller\Map->map[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Map.php ]
+[ info ] [ VIEW ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/public/../application/hanshou/view/map/map.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'need_wait',
+  4 => 'is_login',
+  5 => 'arr_m',
+  6 => 'arr_r',
+  7 => 'arr_x',
+  8 => 'arr_y',
+  9 => 'arr_a',
+  10 => 'city_x',
+  11 => 'city_y',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000289s ] mysql:host=localhost;port=3306;dbname=sql_hanshoushou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_mywords` [ RunTime:0.002312s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '阿韩' and is_read != 1 ) LIMIT 1 [ RunTime:0.000129s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '韩宇佳' and is_read != 1 ) LIMIT 1 [ RunTime:0.000094s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'Ahan' and is_read != 1 ) LIMIT 1 [ RunTime:0.000085s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'katja' and is_read != 1 ) LIMIT 1 [ RunTime:0.000079s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_map` [ RunTime:0.001490s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_map` WHERE  (  1=1 ) ORDER BY id DESC [ RunTime:0.000134s ]
+---------------------------------------------------------------
+[ 2018-03-24T19:34:09+08:00 ] 116.235.34.20 GET /hanshou/public/hanshou/map/map2.html
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/map/map2.html [运行时间：0.059598s][吞吐率：16.78req/s] [内存消耗：5,702.88kb] [文件加载：90]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000043s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001618s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'map',
+    2 => 'map2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.hanshoushou.com/hanshou/public/hanshou/map/map.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; Hm_lvt_e0781425189b1daba20daf3c69d85915=1521120098; PHPSESSID=gv7ovi5vq85ls1amgpp554ojc1; antispame=1521898447; antispamkey=1c51eac76b5e43807b2361ccf617cecb',
+  'kerid' => '11644',
+  'via' => '1.1 hkg4.hk.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'hkg4.hk.smartgslb.com="Surrogate/1.0"',
+  'x-forwarded-for' => '116.235.34.20, 127.0.0.1',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000418s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\hanshou\controller\Map->map2[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Map.php ]
+[ info ] [ VIEW ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/public/../application/hanshou/view/map/map2.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'need_wait',
+  4 => 'is_login',
+  5 => 'date2',
+  6 => 'date1',
+  7 => 'map_address',
+  8 => 'json_arr',
+  9 => 'arr',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000288s ] mysql:host=localhost;port=3306;dbname=sql_hanshoushou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_mywords` [ RunTime:0.002891s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` [ RunTime:0.000176s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '阿韩' and is_read != 1 ) LIMIT 1 [ RunTime:0.000139s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '韩宇佳' and is_read != 1 ) LIMIT 1 [ RunTime:0.000082s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'Ahan' and is_read != 1 ) LIMIT 1 [ RunTime:0.000092s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'katja' and is_read != 1 ) LIMIT 1 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_map` [ RunTime:0.002767s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hs_map` WHERE  (  1=1 ) LIMIT 1 [ RunTime:0.000148s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_map` WHERE  (  1=1 ) ORDER BY id DESC LIMIT 0,10 [ RunTime:0.000160s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_map` WHERE  (  1=1 ) ORDER BY id DESC [ RunTime:0.000156s ]
+---------------------------------------------------------------
+[ 2018-03-24T19:34:11+08:00 ] 116.235.34.20 POST /hanshou/public/hanshou/map/update_xy.html
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/map/update_xy.html [运行时间：0.054392s][吞吐率：18.39req/s] [内存消耗：5,448.30kb] [文件加载：85]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000035s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001563s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'map',
+    2 => 'update_xy',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'content-length' => '37',
+  'accept' => '*/*',
+  'origin' => 'http://www.hanshoushou.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.hanshoushou.com/hanshou/public/hanshou/map/map2.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; Hm_lvt_e0781425189b1daba20daf3c69d85915=1521120098; PHPSESSID=gv7ovi5vq85ls1amgpp554ojc1; antispame=1521898449; antispamkey=0297da91f4687963159725bc08d79ddc',
+  'kerid' => '11644',
+  'via' => '1.1 hkg4.hk.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'hkg4.hk.smartgslb.com="Surrogate/1.0"',
+  'x-forwarded-for' => '116.235.34.20, 127.0.0.1',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+  'x' => '119.30347',
+  'y' => '26.080429',
+  'id' => '',
+  'is_city' => '1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000375s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\hanshou\controller\Map->update_xy[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Map.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000261s ] mysql:host=localhost;port=3306;dbname=sql_hanshoushou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_mywords` [ RunTime:0.002277s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` [ RunTime:0.000167s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '阿韩' and is_read != 1 ) LIMIT 1 [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '韩宇佳' and is_read != 1 ) LIMIT 1 [ RunTime:0.000094s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'Ahan' and is_read != 1 ) LIMIT 1 [ RunTime:0.000079s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'katja' and is_read != 1 ) LIMIT 1 [ RunTime:0.000075s ]
+---------------------------------------------------------------
+[ 2018-03-24T19:34:12+08:00 ] 116.235.34.20 GET /hanshou/public/hanshou/map/map.html
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/map/map.html [运行时间：0.055251s][吞吐率：18.10req/s] [内存消耗：5,466.72kb] [文件加载：86]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000041s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001681s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'map',
+    2 => 'map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.hanshoushou.com/hanshou/public/hanshou/map/map2.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; Hm_lvt_e0781425189b1daba20daf3c69d85915=1521120098; PHPSESSID=gv7ovi5vq85ls1amgpp554ojc1; antispame=1521898451; antispamkey=fdf26af7ad543136dd7e886681cba23f',
+  'kerid' => '11644',
+  'via' => '1.1 hkg4.hk.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'hkg4.hk.smartgslb.com="Surrogate/1.0"',
+  'x-forwarded-for' => '116.235.34.20, 127.0.0.1',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000405s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\hanshou\controller\Map->map[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Map.php ]
+[ info ] [ VIEW ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/public/../application/hanshou/view/map/map.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'need_wait',
+  4 => 'is_login',
+  5 => 'arr_m',
+  6 => 'arr_r',
+  7 => 'arr_x',
+  8 => 'arr_y',
+  9 => 'arr_a',
+  10 => 'city_x',
+  11 => 'city_y',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000231s ] mysql:host=localhost;port=3306;dbname=sql_hanshoushou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_mywords` [ RunTime:0.002379s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` [ RunTime:0.000142s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '阿韩' and is_read != 1 ) LIMIT 1 [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '韩宇佳' and is_read != 1 ) LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'Ahan' and is_read != 1 ) LIMIT 1 [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'katja' and is_read != 1 ) LIMIT 1 [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_map` [ RunTime:0.001954s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_map` WHERE  (  1=1 ) ORDER BY id DESC [ RunTime:0.000167s ]
+---------------------------------------------------------------
+[ 2018-03-24T19:34:24+08:00 ] 116.235.34.20 GET /hanshou/public/hanshou/map/dao.html
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/map/dao.html [运行时间：0.050781s][吞吐率：19.69req/s] [内存消耗：5,450.99kb] [文件加载：86]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000040s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001572s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'map',
+    2 => 'dao',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.hanshoushou.com/hanshou/public/hanshou/map/map.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'admin_username=admin; Hm_lvt_e0781425189b1daba20daf3c69d85915=1521120098; PHPSESSID=gv7ovi5vq85ls1amgpp554ojc1; antispame=1521898452; antispamkey=85a468baee55cd88d7307e4cf6e209b9',
+  'kerid' => '11644',
+  'via' => '1.1 hkg4.hk.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'hkg4.hk.smartgslb.com="Surrogate/1.0"',
+  'x-forwarded-for' => '116.235.34.20, 127.0.0.1',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000381s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\hanshou\controller\Map->dao[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Map.php ]
+[ info ] [ VIEW ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/public/../application/hanshou/view/map/dao.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'need_wait',
+  4 => 'is_login',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000249s ] mysql:host=localhost;port=3306;dbname=sql_hanshoushou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_mywords` [ RunTime:0.002175s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` [ RunTime:0.000143s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '阿韩' and is_read != 1 ) LIMIT 1 [ RunTime:0.000129s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '韩宇佳' and is_read != 1 ) LIMIT 1 [ RunTime:0.000115s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'Ahan' and is_read != 1 ) LIMIT 1 [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'katja' and is_read != 1 ) LIMIT 1 [ RunTime:0.000114s ]
+---------------------------------------------------------------
+[ 2018-03-24T20:08:51+08:00 ] 137.226.113.26 GET /hanshou/public/hanshou/index/index.html
+[ info ] www.hanshoushou.com/hanshou/public/hanshou/index/index.html [运行时间：0.048004s][吞吐率：20.83req/s] [内存消耗：5,097.60kb] [文件加载：81]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000036s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001692s ]
+[ info ] [ LANG ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hanshou',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hanshoushou.com',
+  'x-forwarded-host' => 'www.hanshoushou.com',
+  'x-forwarded-server' => 'www.hanshoushou.com',
+  'x-forwarded-for' => '137.226.113.26, 127.0.0.1, 173.254.200.70',
+  'user-agent' => 'Mozilla/5.0 zgrab/0.x (compatible; Researchscan/t13rl; +http://researchscan.comsys.rwth-aachen.de)',
+  'accept-encoding' => 'gzip',
+  'kerid' => '11644',
+  'via' => '1.0 lax1.us.smartgslb.com (squid/3.4.9)',
+  'surrogate-capability' => 'lax1.us.smartgslb.com="Surrogate/1.0"',
+  'cache-control' => 'max-age=259200',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000392s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\hanshou\controller\Index->index[ /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/application/hanshou/controller/Index.php ]
+[ info ] [ VIEW ] /data3/htdocs/hanshoushou.host.smartgslb.com/hanshou/public/../application/hanshou/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'need_wait',
+  4 => 'is_login',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000273s ] mysql:host=localhost;port=3306;dbname=sql_hanshoushou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_mywords` [ RunTime:0.002196s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` [ RunTime:0.000206s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '阿韩' and is_read != 1 ) LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = '韩宇佳' and is_read != 1 ) LIMIT 1 [ RunTime:0.000084s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'Ahan' and is_read != 1 ) LIMIT 1 [ RunTime:0.000100s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_mywords` WHERE  (  name = 'katja' and is_read != 1 ) LIMIT 1 [ RunTime:0.000090s ]

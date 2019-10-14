@@ -1,0 +1,58 @@
+{include file="/public/head"}
+<title>添加语言</title>
+	</head>
+	<body class="skin-blue layout-boxed sidebar-mini" style="padding-top: 0px;">
+		<div class="wrapper" style="overflow: hidden; height: auto; min-height: 100%;">
+			{include file="/public/header"} {include file="/public/sidebar"}
+			<div class="content-wrapper" style="min-height: 1020px;">
+				<div class="box">
+					<div class="box-header with-border" style="padding-left: 50px;">
+						<h3 class="box-title">创建一个新的语言分类吧</h3>
+					</div>
+					<div class="box-body content" style="padding: 20px 50px;">
+						<div class="input-group" style="margin-bottom: 20px;">
+							<input type="text" name="name" class="form-control name" value="" placeholder="新的语言分类"/>
+							<span class="input-group-btn">
+				        		<button class="btn btn-primary btn-flat add_language">创建</button>
+				      		</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		{include file="/public/footer"} {include file="/public/foot"}
+	</body>
+	<script>
+		$(".add_language").click(function(){
+			var name = $(".name").val();
+			if(name == ""){
+				layer.msg('语言类型不能为空', {
+				  icon: 2,
+				  time: 2000 //2秒关闭（如果不配置，默认是3秒）
+				}, function(){
+				  //do something
+				});   
+				        
+				return;
+			}
+			$.ajax({
+				type:"post",
+				url:"{:url('hanshou/base/add_language')}",
+				async:false,
+				data:{name:name},
+				success:function(data){
+					if(data[0]== "101"){
+						$msg = 1;
+					}else{
+						$msg = 2;
+					}
+					layer.msg(data[1], {icon: $msg,}, function(){
+					  window.location.href="{:url('hanshou/base/upload')}";//do something
+					});           
+				}
+			});
+		})
+		
+		
+	</script>
+</html>

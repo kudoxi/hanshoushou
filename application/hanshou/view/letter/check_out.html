@@ -1,0 +1,43 @@
+{include file="/public/head"}
+<style>
+	.btn_div button{
+		width: 100px;
+	    display: inline-block;
+	}
+</style>
+	</head>
+	<body style="padding: 20px;text-align: center;">
+		<div>
+			<p style="padding: 31px 0px;">看完了吗？看完我就拿走了哦...以后也不会再来打扰了</p>
+			<div class="btn_div">
+				<button class="btn btn-block btn-danger btn-lg read_over">嗯</button>
+				<button style="margin-top: -1px;margin-left: 20px;" class="btn btn-block btn-info btn-lg read_wait">等会儿</button>
+			</div>
+		</div>
+	</body>
+	<script>
+		$(".read_over").click(function(){
+			react(1);
+		})
+		$(".read_wait").click(function(){
+			react(2);
+		})
+		function react(is_read){
+			$.ajax({
+				type:"post",
+				url:"{:url('hanshou/letter/is_read')}",
+				async:true,
+				data:{is_read:is_read},
+				success:function(data){
+					layer.msg(data[1],{time: 2000},function(){
+						var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
+						parent.layer.close(index); //再执行关闭  
+					});
+				},
+				error:function(){
+					layer.msg("服务器有点问题，刷新试试");
+				}
+			});
+		}
+	</script>
+</html>
